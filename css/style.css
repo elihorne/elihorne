@@ -1,75 +1,174 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
-html,
-body {
-  width: 100%;
-  height: 100%;
-  font-family: helvetica, arial, sans-serif;
-  color: #222;
+html, body {
+    font-family: helvetica, arial, sans-serif;
+    color: #222;
 }
 .wrapper {
-  width: 100%;
-  height: 100%;
-  background: #3cf;
-  color: #fff;
-  font-family: 'helvetica', helvetica, sans-serif;
-  padding: 50px;
-  box-sizing: border-box;
-  position: relative;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  min-height: 500px;
-  font-size: 18px;
+    font-family: 'helvetica', helvetica, sans-serif;
+    padding: 50px 0;
+    box-sizing: border-box;
+    position: relative;
 }
-.wrapper .egg {
-  font-family: 'lucida grande', sans-serif;
+.main-header {
+    clear: both;
+    font-size: 14px;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.5);
 }
-.wrapper a {
-  text-decoration: none;
-  color: #fff;
-  border-bottom: 1px dotted #fff;
-  padding: 2px 0;
-  -webkit-transition: all .09s;
-  position: relative;
+.main-header .my-name {
+    font-weight: bold;
+    float: left;
+    color: #000;
+    padding: 2px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
-.wrapper a:hover {
-  color: #111;
-  border-bottom: 1px dotted #111;
+.main-header .main-menu {
+    float: right;
 }
-.wrapper a:active {
-  top: 1px;
+.main-header .main-menu a {
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0 2px;
 }
-.vanity .name {
-  font-size: 550%;
-  display: block;
-  font-weight: bold;
-  letter-spacing: -3px;
-  position: relative;
-  left: -6px;
+.description {
+    display: block;
+    margin: 150px 0;
+    width: 90%;
+    clear: both;
+    font-size: 85px;
+    font-weight: bold;
 }
-.vanity .title {
-  font-size: 300%;
-  position: relative;
-  left: -2px;
+.section-label {
+    text-transform: uppercase;
+    display: inline-block;
+    color: #999;
+    margin-bottom: 20px;
+    font-size: 14px;
 }
-.vanity .blurb {
-  margin-top: 50px;
+.wrapper {
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
-.footer {
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
+.work-experience {
+    border-top: 1px solid #eee;
+    padding: 50px 0;
 }
-.footer .social {
-  list-style: none;
-  border-top: 1px solid #fff;
-  display: block;
-  width: 100%;
-  padding-top: 20px;
-  margin-top: 20px;
+.logos {
+    overflow: hidden;
+    position: relative;
 }
-.footer .social li {
-  float: left;
-  margin-right: 30px;
+.logos a {
+    color: #000;
+    font-weight: bold;
+}
+.logos .brand {
+    display: inline-block;
+    width: calc(25% - 8px);
+    height: 180px;
+    background-color: #f7f7f7;
+    margin: 3px;
+    text-align: center;
+    position: relative;
+}
+.logos .brand:first-child {
+    margin-left: 0;
+}
+.logos .brand:last-child {
+    margin-right: 0;
+}
+.logos .brand .time {
+    position: absolute;
+    text-transform: uppercase;
+    top: 5px;
+    left: 5px;
+    background: #fff;
+    font-size: 10px;
+    padding: 4px 10px;
+    font-weight: bold;
+}
+.logos .brand img {
+    max-height: 60px;
+    max-width: 100px;
+    width: 70%;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logos .explanation {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin-left: 30px;
+    margin-right: 40px;
+    font-size: 15px;
+    width: calc(75% - 25px);
+}
+.logos .explanation p {
+    margin: 10px 0;
+    line-height: 22px;
+}
+.site-footer {
+    margin: 0 auto;
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    line-height: 17.6px;
+    border-top:1px solid #ddd;
+    margin-top:50px;
+    padding:20px;
+    overflow:hidden;
+}
+.site-footer a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+.site-footer a:hover {
+    color: #333;
+}
+.site-footer .copy {
+    float: left;
+}
+.site-footer .social {
+    float: right;
+    text-align: right;
+}
+.site-footer .follow {
+    display: inline-block;
+    margin: 0 12px;
+}
+.site-footer .inner {
+    margin: 50px 0 10px;
+}
+.site-footer h5 {
+    font-size: 12px;
+    margin: 0;
+}
+.site-footer ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.site-footer .group {
+    margin-bottom: 20px;
+}
+.site-footer .inner {
+    float: right;
+    margin-right: 48px;
+}
+.site-footer .brand {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
