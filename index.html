@@ -16,7 +16,7 @@
         <div class="brand-nav-wrapper"></div>
         <div class="intro">
           <h2>Hi, I'm Eli.</h2>
-          <p>I'm a product designer currently living in Brooklyn.</p>
+          <p>I'm a product designer currently traveling around the United States.</p>
         </div>
       </div>
     </header>
@@ -50,14 +50,19 @@
           </div>
         </div>
       </div> <!-- /work-wrapper -->
-      <div id="video-section" class="video-section-wrapper">
+      <div id="video-section" class="video-section-wrapper content-section">
         <div class="content-wrapper">
-          <h3>I also enjoy making videos</h3>
+          <h3>I enjoy making videos</h3>
           <div class="youmax"></div>
           <a class="button" href="https://youtube.com/elihorne">See more on YouTube</a>
         </div>
+      </div> <!-- /video-section -->
+      <div id="articles-section" class="words-section-wrapper content-section">
+        <div class="content-wrapper">
+          <h3>I also write things</h3>
+          <div id="fm-medium-embed"></div>
+        </div>
       </div>
-
     </section>
 
     <footer class="main">
@@ -81,6 +86,21 @@
       </div>
     </footer>
   </body>
+
+  <script src="//data.feedmirror.com/embed.js"></script>
+
+  <script>
+  var fmSettings = {
+    feedURL: 'https://data.feedmirror.com/-KdPKxeBfplQekzaoov-.json',
+    integration: 'medium',
+    linkOutText: 'Read more on Medium',
+    postsCount: 3,
+    element: 'fm-medium-embed'
+  };
+
+  feedmirror.initialize(fmSettings);
+  </script>
+  
   <script>
     init();
   </script>

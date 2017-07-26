@@ -194,10 +194,11 @@ footer.main {
       transform: translate(-50%, -50%);
       opacity: 0.5; }
 
-.video-section-wrapper {
+.content-section {
   background: #f9f9f9;
   padding: 50px 0;
-  border-top: 1px solid #eeeeee; }
+  border-top: 1px solid #eeeeee;
+  overflow: hidden; }
 
 .yl-item-wrapper {
   width: 300px;
@@ -246,6 +247,53 @@ footer.main {
 button.mfp-arrow {
   display: none; }
 
+#fm-medium-embed {
+  text-align: left; }
+  #fm-medium-embed .fm-post {
+    margin-bottom: 20px;
+    border: 1px solid #eeeeee;
+    background: white;
+    width: 300px;
+    margin: 10px;
+    float: left;
+    box-sizing: border-box;
+    padding-bottom: 20px; }
+  #fm-medium-embed .fm-post-image {
+    overflow: hidden; }
+    #fm-medium-embed .fm-post-image img {
+      min-height: 160px;
+      object-fit: cover; }
+  #fm-medium-embed .fm-post-sub-title {
+    margin: 20px;
+    line-height: 24px;
+    height: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  #fm-medium-embed .fm-post-read-more {
+    font-size: 15px;
+    color: black;
+    display: inline-block;
+    margin: 0 20px; }
+  #fm-medium-embed .fm-post-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px; }
+    #fm-medium-embed .fm-post-title a {
+      color: black;
+      text-decoration: none; }
+  #fm-medium-embed .fm-link-out {
+    clear: both;
+    text-align: center;
+    margin-top: 40px; }
+
 #intro-home {
   background: url(/img/photos/iceland-wide-color.jpg) center bottom no-repeat;
   background-size: cover; }
+
+@media screen and (max-width: 1019px) {
+  #fm-medium-embed .fm-post {
+    width: 100%;
+    float: none; }
+
+  .yl-item-wrapper {
+    width: 100%; } }
