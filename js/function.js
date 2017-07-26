@@ -1,6 +1,6 @@
 function brandNav() {
   var brandName = 'Eli Horne';
-  var navItems = ['work', 'video', 'contact'];
+  var navItems = ['work', 'video', 'articles', 'contact'];
 
   var brandNameHTML = '<a href="/" class="brand-name">'+brandName+'</a>';
   var navHTML = '<ol class="brand-nav"></ol>';
