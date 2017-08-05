@@ -41,6 +41,7 @@ header.main {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 80%;
     transform: translate(-50%, -35%);
     z-index: 3;
     color: white;
@@ -100,8 +101,6 @@ footer.main {
       footer.main .contact .elsewhere .youtube {
         background: url(/img/icons/youtube.png) left top no-repeat; }
     footer.main .contact .method {
-      margin-right: 100px;
-      padding-right: 100px;
       text-align: left;
       float: left; }
       footer.main .contact .method a {
@@ -297,3 +296,11 @@ button.mfp-arrow {
 
   .yl-item-wrapper {
     width: 100%; } }
+@media screen and (max-width: 800px) {
+  .content-wrapper {
+    padding: 0 15px; }
+
+  .brand-nav-wrapper .brand-nav li {
+    margin: 0 3px; }
+    .brand-nav-wrapper .brand-nav li a {
+      padding: 0 3px; } }
