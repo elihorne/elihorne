@@ -1,0 +1,478 @@
+// COLORS
+$primary-accent-color: #3cf
+$body-text-color: #333
+$body-background: #fff
+$header-background: #f1f1f1
+$header-nav-color: #fff
+$footer-nav-color: $header-background
+$footer-background: #111
+$dark-divider: #444
+$light-divider: #eee
+
+
+//TYPOGRAPHY
+$primary-font-family: 'Lato', arial, sans-serif
+$nav-text: 14px
+$intro-text-size: 20px
+$paragraph-text-size: 16px
+$h1-text-size: 5vw
+$h2-text-size: 30px
+$h3-text-size: 24px
+$h4-text-size: 18px
+$emoji-text: 24px
+$button-text: 16px
+
+$heading-font: 'Playfair Display', cursive
+
+
+
+// Z-INDEX
+$nav-z-index: 100
+
+
+// RESET
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: $primary-font-family
+  background: $body-background
+  color: $body-text-color
+
+p
+  font-size: $paragraph-text-size
+
+  &.note
+    color: #999
+
+img
+  width: 100%
+
+h1
+  font-size: $h1-text-size
+  font-family: 'Playfair Display'
+  font-weight: 900
+  color: #111
+  text-align: center
+
+h1.light
+  color: #fff
+
+h2
+  font-size: $h2-text-size
+  margin-bottom: 30px
+  font-family: $heading-font
+
+h3
+  font-size: $h3-text-size
+  margin-bottom: 30px
+  font-family: $primary-font-family
+  text-transform: uppercase
+  margin-bottom: 10px
+
+h4
+  color: #9B9B9B
+  margin-bottom: 20px
+
+p
+  line-height: 1.65em
+  margin: 20px 0
+
+#core-work
+  position: relative
+
+.no-margin
+  margin: 0
+
+.down-arrow
+  background-color: #666
+  -webkit-mask:  url(/img/icons/down-arrow.svg) no-repeat center center
+  mask: url(/img/icons/down-arrow.svg) no-repeat center center
+  -webkit-mask-size: 16px
+  mask-size: 100px
+  width: 16px
+  height: 50px
+  margin: 10px auto
+  display: block
+  border: 1px solid #911
+
+  -webkit-transition-property: -webkit-transform
+  -webkit-transition-duration: 1s
+  -moz-transition-property: -moz-transform
+  -moz-transition-duration: 1s
+  -webkit-animation-name: pulse
+  -moz-animation-name: pulse
+  -webkit-animation-duration: 1.5s
+  -moz-animation-duration: 1.5s
+  -webkit-animation-iteration-count: infinite
+  -moz-animation-iteration-count: infinite
+  -webkit-animation-timing-function: ease
+  -moz-animation-timing-function: ease
+
+@keyframes pulse
+  0%
+    transform: translate(0, 0)
+
+  50%
+    transform: translate(0, 10%)
+
+  100%
+    transform: translate(0, 0)
+
+.centered-text
+  text-align: center
+  max-width: 700px
+  margin: 0 auto
+
+.intro
+  border-bottom: 1px solid #eee
+
+.intro-text
+  font-family: $heading-font
+
+.mini-intro
+  padding: 50px 0
+
+.mini-section-label
+  text-transform: uppercase
+  display: inline-block
+  padding: 10px
+  margin: 0 auto 20px
+  font-weight: bold
+  color: #999
+  clear: both
+  border-bottom: 2px solid $primary-accent-color
+
+  &.centered
+    text-align: center
+
+.intro-text
+  padding: 10px 0
+  text-align: center
+
+.work-sample
+  h1.intro-text
+    font-size: 30px
+
+.main-site-nav
+  overflow: hidden
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 500
+  background: #fff
+  text-transform: uppercase
+
+  a
+    font-family: 'Roboto Condensed'
+    text-decoration: none
+
+  .go-home
+    margin-left: 50px
+    font-family: 'Oswald'
+    text-decoration: none
+    color: #000
+    font-size: 1.5em
+
+    .first-name
+      font-weight: 700
+
+    .last-name
+      font-weight: 300
+
+  .section-nav
+    float: right
+    margin-right: 50px
+    padding: 10px 0
+
+    li
+      float: left
+      list-style-type: none
+      margin-left: 25px
+
+    a
+      color: #666
+
+
+.main-site-footer
+  font-size: 14px
+
+  .method-wrapper
+    display: grid
+    grid-template-columns: repeat(2, 265px)
+    color: #888
+
+    a
+      color: #888
+      text-decoration: none
+
+    .label
+      font-size: 16px
+      color: #222
+      font-family: 'Roboto Condensed'
+      text-transform: uppercase
+      display: block
+      margin-bottom: 20px
+
+    li
+      list-style-type: none
+
+      a
+        padding: 6px 0
+        display: block
+
+.top-level
+  display: none
+
+.section-resume
+
+  h4
+    font-family: $heading-font
+    font-size: $h3-text-size
+    float: left
+    color: #333
+
+
+  .row
+    clear: both
+    margin-bottom: 50px
+
+
+
+  .grid
+    margin-left: 255px
+
+
+    .item
+      line-height: 1.25em
+      margin: 6px 0
+
+      span
+        color: #999
+
+      .employer, .level-of-education
+        font-weight: bold
+        color: #111
+
+
+    p.item
+      line-height: 1.95em
+      margin-bottom: 20px
+
+    .item-three
+      display: grid
+      grid-template-columns: 33% 33% 33%
+
+    .item-two
+      display: grid
+      grid-template-columns: 33% 66%
+
+
+
+.full-height
+  min-height: 100vh
+  height: 100%
+  position: relative
+
+.section-home
+  background: #70e1f5
+  background: -webkit-linear-gradient(top, #ffd194, #70e1f5)
+  background: linear-gradient(to top left, #ffd194, #70e1f5)
+
+
+.top-divider
+  border-top: 1px solid #eee
+  padding: 30px 0
+
+.contained
+  max-width: 960px
+  margin: 0 auto
+  padding: 0 60px 60px
+
+.mini
+  max-width: 500px
+  margin: 50px auto
+
+
+
+.vertical-center
+  position: absolute
+  left: 50%
+  top: 50%
+  width: 100%
+  max-width: 840px
+  padding: 0 20px
+  text-align: center
+  transform: translate(-50%, -50%)
+
+.grid
+  display: grid
+
+.vertical-center-image
+  display: block
+  padding: 50px 0
+
+
+.content
+  display: none
+
+  .col
+    position: relative
+    height: 100%
+
+  .col-inline
+    display: inline-block
+
+  .col-thirds
+    columns: 3 200px
+    column-gap: 50px
+    margin: 60px auto
+
+  .col-half
+    columns: 2 300px
+    column-gap: 50px
+    position: relative
+    margin: 40px auto
+
+
+
+
+  .full-width-image
+    display: block
+    width: 100%
+    padding: 15px 50px
+
+  .demo
+
+.image-caption
+  text-align: center
+  clear: both
+  margin: 0 auto
+  display: block
+  padding: 20px 0
+
+
+.work-logos.pull-up
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+
+.work-logos
+  padding: 20px 0 20px
+  text-align: center
+  transition: all 0.5s ease-in-out
+  margin: 0 auto
+
+  .mini-section-label
+    margin: 0 auto 20px
+    display: inline-block
+    color: #fff
+    border-bottom: 2px solid #fff
+
+  .grid
+    grid-template-columns: repeat(4, 25%)
+    grid-gap: 0
+    grid-auto-flow: column
+    justify-self: center
+    overflow: hidden
+    height: 120px
+    max-width: 650px
+    margin: 0 auto
+
+
+  &:hover
+    .work-item
+      opacity: 0.15
+
+  .work-item
+    position: relative
+    opacity: 0.75
+    transition: all .35s ease-out
+
+    &:hover
+      opacity: 0.95
+
+    &.google
+      background-color: #fff
+      -webkit-mask:  url(/img/logos/google-logo.svg) no-repeat center center
+      mask: url(/img/logos/google-logo.svg) no-repeat center center
+      -webkit-mask-size: 100px
+      mask-size: 100px
+
+
+
+    &.food-network
+      background-color: #fff
+      -webkit-mask:  url(/img/logos/food-network-logo.svg) no-repeat center center
+      mask: url(/img/logos/food-network-logo.svg) no-repeat center center
+      -webkit-mask-size: 70px
+      mask-size: 100px
+
+    &.hgtv
+      background-color: #fff
+      -webkit-mask:  url(/img/logos/hgtv-logo.svg) no-repeat center center
+      mask: url(/img/logos/hgtv-logo.svg) no-repeat center center
+      -webkit-mask-size: 80px
+      mask-size: 100px
+
+
+
+    &.thx
+      background-color: #fff
+      -webkit-mask:  url(/img/logos/thx-logo.svg) no-repeat center center
+      mask: url(/img/logos/thx-logo.svg) no-repeat center center
+      -webkit-mask-size: 80px
+      mask-size: 100px
+
+
+
+    &.playboy
+      background-color: #fff
+      -webkit-mask:  url(/img/logos/playboy-logo.svg) no-repeat center center
+      mask: url(/img/logos/playboy-logo.svg) no-repeat center center
+      -webkit-mask-size: 40px
+      mask-size: 100px
+
+.dark.work-logos
+  opacity: 0.5
+
+  .mini-section-label
+    color: #999
+    border-bottom: 2px solid $primary-accent-color
+
+  .work-item
+    &.playboy
+      background-color: #111
+    &.thx
+      background-color: #111
+    &.hgtv
+      background-color: #111
+    &.google
+      background-color: #111
+    &.food-network
+      background-color: #111
+
+
+  img
+    max-width: 90px
+    display: block
+    max-height: 55px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+
+@media screen and (max-width: 960px)
+  .section-resume
+    .grid
+      margin-left: 0
+      clear: both
+      padding-top: 30px
+
+
+@media screen and (max-width: 800px)
