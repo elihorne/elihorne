@@ -5,11 +5,11 @@
     <meta name="google-site-verification" content="IELEzpQ-42UDYmtzkA2ZPj_iKPmaMOWhJ1-SI8T80ek" />
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Playfair+Display:900|Lato|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/js/jquery.js"></script>
     <script src="/js/function.js"></script>
     <meta name="viewport" content="width=device-width">
   </head>
+  <!-- <body class="resume-mode"> -->
   <body>
     <nav class="main-site-nav">
       <a class="go-home routing" href="/"><span class="first-name">Eli</span> <span class="last-name">Horne</span></a>
@@ -23,7 +23,7 @@
       </ul>
     </nav>
 
-    <div id="core-work" class="staging full-height">
+    <div class="staging full-height">
 
 
 
@@ -34,6 +34,59 @@
         <section class="section-home full-height top-level">
           <div class="content">
             <h1 class="intro-text vertical-center light">I'm a digital product designer living in Brooklyn, NY</h1>
+          </div>
+        </section>
+
+        <!-- thx sample -->
+        <section class="full-height work-sample work-thx top-level">
+          <div class="content">
+            <div class="full-height intro">
+              <div class="vertical-center">
+                <span class="mini-section-label centered">THX</span>
+                <h2 class="intro-text">I freelanced for THX and relaunched their website.</h2>
+                <span class="down-arrow"></span>
+              </div>
+            </div>
+            <div class="mini">
+              <p>Together with two of the top designers from Scripps Networks, we took what we learned from building a <a class="routing" href="/work/scripps">design system for HGTV</a> and applied it to THX.</p>
+              <p>Some of our signature patterns like the "super dropdown" make an appearance here, although the site was customized to the client's specific needs.</p>
+            </div>
+            <img class="max-width-image" src="/img/work/thx/thx-home.png"/>
+          </div>
+        </section>
+
+        <!-- scripps sample -->
+        <section class="full-height work-sample work-scripps top-level">
+          <div class="content">
+            <div class="full-height intro">
+              <div class="vertical-center">
+                <span class="mini-section-label centered">Scripps Networks</span>
+                <h2 class="intro-text">I was responsible for building a flexible design system for HGTV, Food Network and beyond.</h2>
+                <span class="down-arrow"></span>
+              </div>
+            </div>
+            <div class="mini">
+              <p>Scripps Networks is a lifestyle media company, responsible for many popular brands including HGTV and the Food Network.</p>
+              <p>I was tasked with creating a design system that could be shared between properties. Modular components like dropdown headers and carousels could be implemented quickly, and easily skinned.</p>
+              <img src="/img/work/scripps/sni-lock-up.jpg"/>
+
+              <h3 class="heading">Up First: HGTV</h3>
+              <h4 class="sub-heading">Getting the house in order</h4>
+              <p>HGTV was the first property that used the new design system. We knew that each top level category (decorating, home improvement, etc) had several important child categories and we wanted to provide "single click" access.</p>
+              <p>We ended up with something we called "super dropdowns" which were exposed on hover. This design had an added benefit of being highly accessible and improving search engine optimization.</p>
+            </div>
+              <img class="max-width-image" src="/img/work/scripps/hgtv-header.png"/>
+            <div class="mini">
+              <h3 class="heading">Next: Food Network</h3>
+              <h4 class="sub-heading">Now we are cooking</h4>
+              <p>Once we ironed out the wrinkles with HGTV, the first skinning candidate was Food Network.</p>
+              <p>You can see the exact same "super dropdown" component in use, and the surrounding components locked to the same grid.</p>
+            </div>
+            <img class="max-width-image" src="/img/work/scripps/fn-header.png"/>
+            <div class="mini">
+              <p>This system was ultimately deployed on other properties including DIY, and was an inspiration for the work I did on <a class="routing" href="/work/thx">THX</a>.</p>
+            </div>
+
           </div>
         </section>
 
@@ -48,6 +101,9 @@
               </div>
             </div>
               <div class="mini">
+                <p>During my time on the G Suite team, I was design lead for Docs, Sheets and Forms. I also contributed features to Slides, and led experimental initiatives.</p>
+                <p>The work below shows some highlights. More work is available upon request.
+                <img src="/img/work/google/google-docs-logos.jpg"/>
                 <h3 class="heading">Project Neo</h3>
                 <h4 class="sub-heading">Swinging the pendulum towards mobile</h4>
                 <p>Our web experience was the flagship platform, but mobile usage was growing rapidly - especially in emerging markets.</p>
@@ -57,7 +113,7 @@
                 <p>I designed a palette system for Docs that accomodated the incoming features, and worked with design leads on the other editors to make sure we were consistent.</p>
 
               </div>
-              <img class="full-width-image" src="/img/work/google/neo-palettes.png"/>
+              <img class="max-width-image" src="/img/work/google/neo-palettes.png"/>
               <h4 class="image-caption">A selection of updated palettes from Project Neo.</h4>
               <div class="contained">
 
@@ -73,10 +129,10 @@
                   </div>
                   <div class="col">
                     <div class="col-inline">
-                      <p>I gathered stats on the top 10% formatting actions, and designed a contextual tool strip that
-                        appeared above the on-screen keyboard.</p>
-                      <p>The toolbar was particularly useful for surfacing secondary options like indenting when inside of a list.</p>
-                      <p>After launch, formatting changes made in the mobile editor increased significantly.</p>
+                      <p>I gathered stats on the top 10% formatting actions on desktop and compared them to mobile.  I then designed a contextual tool strip that
+                        appeared above the on-screen keyboard, making popular actions much faster to access.</p>
+                      <p>The toolbar was particularly useful for surfacing secondary options like indentation when inside of a list.</p>
+                      <p>After launch, documents containing rich formatting increased significantly.</p>
                     </div>
                   </div>
 
@@ -84,8 +140,8 @@
 
 
               </div>
-              <img src="/img/work/google/contextual-keyboard-1.png" class="full-width-image"/>
-              <img src="/img/work/google/contextual-keyboard-2.png" class="full-width-image"/>
+              <img src="/img/work/google/contextual-keyboard-1.png" class="max-width-image"/>
+              <img src="/img/work/google/contextual-keyboard-2.png" class="max-width-image"/>
               <div class="contained">
                 <div class="col-half">
 
@@ -112,8 +168,8 @@
                     <div class="col-inline">
                       <div class="mini"><h3 class="heading">Experimental stuff</h3>
                       <h4 class="sub-heading">Pushing on the boundaries</h4>
-                      <p>I led several initiatives to explore what assistive productivity tools might look like in the future.</p>
-                      <p>While these features didn't launch in this exact format, they influenced other "assistive" initiatives.</p>
+                      <p>I led several initiatives to explore what productivity tools might look like in the future - faster, smarter, better.</p>
+                      <p>While these features didn't launch in this exact format, they influenced other "assistive" initiatives at Google.</p>
                     </div>
                   </div>
                   <div class="col">
@@ -128,12 +184,12 @@
 
 
               </div>
-              <img src="/img/work/google/experimental-screen-3.gif"/>
+              <img style="max-width: 500px; margin: 0 auto; display: block" src="/img/work/google/experimental-screen-3-crop.gif"/>
           </div>
         </section>
       </section>
       <!-- portfolio navigation -->
-      <nav class="work-logos">
+      <nav id="core-work" class="work-logos">
         <span class="mini-section-label centered">Work</span>
         <div class="grid">
           <a href="/work/google" class="routing work-item google">Google</a>

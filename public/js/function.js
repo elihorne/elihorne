@@ -15,15 +15,6 @@ function linkHandling(){
     event.preventDefault();
     var scrollTarget = $(this).attr('href');
 
-    if(window.location.pathname == '/' || scrollTarget == '#about') {
-      // we are already on the requested page
-      console.log('already on the home page page, scroller')
-    } else {
-      // new page, do the full route change
-
-      gotoRoute('/');
-    }
-
     var scrollTarget = scrollTarget.split('#')[1];
     console.log('scrollTarget = ' + scrollTarget);
     $('html, window').animate({
