@@ -48,10 +48,8 @@ p {
   margin: 20px 0; }
 
 .staging {
-  position: relative; }
-
-.no-margin {
-  margin: 0; }
+  position: relative;
+  width: 100%; }
 
 .down-arrow {
   background-color: #666666;
@@ -127,12 +125,12 @@ p {
   right: 0;
   z-index: 500;
   background: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 0 50px; }
   .main-site-nav a {
     font-family: "Roboto Condensed";
     text-decoration: none; }
   .main-site-nav .go-home {
-    margin-left: 50px;
     font-family: "Oswald";
     text-decoration: none;
     color: black;
@@ -143,7 +141,6 @@ p {
       font-weight: 300; }
   .main-site-nav .section-nav {
     float: right;
-    margin-right: 50px;
     padding: 10px 0; }
     .main-site-nav .section-nav li {
       float: left;
@@ -156,7 +153,7 @@ p {
   font-size: 14px; }
   .main-site-footer .method-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 265px);
+    grid-template-columns: 33% 66%;
     color: #888888; }
     .main-site-footer .method-wrapper a {
       color: #888888;
@@ -207,6 +204,7 @@ p {
 
 .full-height {
   min-height: 100vh;
+  width: 100vw;
   height: 100%;
   position: relative; }
 
@@ -225,7 +223,8 @@ p {
   padding: 0 60px 60px; }
 
 .mini {
-  max-width: 500px;
+  max-width: 540px;
+  padding: 0 20px;
   margin: 50px auto; }
 
 .vertical-center {
@@ -298,7 +297,7 @@ p {
     color: white;
     border-bottom: 2px solid white; }
   .work-logos .grid {
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 0;
     grid-auto-flow: column;
     justify-self: center;
@@ -311,6 +310,8 @@ p {
   .work-logos .work-item {
     position: relative;
     opacity: 0.85;
+    text-indent: -9999em;
+    overflow: hidden;
     transition: all 0.35s ease-out; }
     .work-logos .work-item:hover {
       opacity: 0.95; }
@@ -337,12 +338,6 @@ p {
       -webkit-mask: url(/img/logos/thx-logo.svg) no-repeat center center;
       mask: url(/img/logos/thx-logo.svg) no-repeat center center;
       -webkit-mask-size: 80px;
-      mask-size: 100px; }
-    .work-logos .work-item.playboy {
-      background-color: white;
-      -webkit-mask: url(/img/logos/playboy-logo.svg) no-repeat center center;
-      mask: url(/img/logos/playboy-logo.svg) no-repeat center center;
-      -webkit-mask-size: 40px;
       mask-size: 100px; }
 
 .dark.work-logos {
@@ -400,4 +395,32 @@ p {
   .section-resume .grid {
     margin-left: 0;
     clear: both;
-    padding-top: 30px; } }
+    padding-top: 10px; } }
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 36px; }
+
+  h2 {
+    font-size: 22px;
+    margin: 0 30px; }
+
+  .work-logos .grid {
+    padding: 0 20px; }
+  .work-logos .work-item.google {
+    -webkit-mask-size: 80px;
+    mask-size: 80px; }
+  .work-logos .work-item.food-network {
+    -webkit-mask-size: 50px;
+    mask-size: 50px; }
+  .work-logos .work-item.hgtv {
+    -webkit-mask-size: 60px;
+    mask-size: 60px; }
+  .work-logos .work-item.thx {
+    -webkit-mask-size: 60px;
+    mask-size: 60px; }
+
+  .contained {
+    padding: 0 30px 40px; }
+
+  .main-site-nav {
+    padding: 0 20px; } }
