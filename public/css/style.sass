@@ -77,6 +77,12 @@ h4
   color: #9B9B9B
   margin-bottom: 20px
 
+h5
+  font-weight: bold
+  text-transform: uppercase
+  margin-bottom: 15px
+  color: #999
+
 p
   line-height: 1.65em
   margin: 20px 0
@@ -240,6 +246,16 @@ p
 
 
 
+    .description
+      margin: 0 0 30px
+
+      ul
+        margin-left: 20px
+
+      li
+        margin-bottom: 6px
+
+
   .grid
     margin-left: 255px
 
@@ -254,6 +270,8 @@ p
       .employer, .level-of-education
         font-weight: bold
         color: #111
+
+
 
 
     p.item
@@ -467,47 +485,6 @@ p
     top: 50%
     transform: translate(-50%, -50%)
 
-.resume-mode
-
-  .main-site-footer
-    display: none
-
-  h2
-    font-size: 24px
-    margin: 0 70px
-
-  h4
-    font-size: 16px
-
-  .mini-intro
-    padding: 80px 0 60px
-
-  .contained
-    padding-bottom: 30px
-
-  .top-divider
-    padding: 20px 0
-
-  .grid p.item
-    margin-bottom: 15px
-    margin-top: 0
-
-  p, .grid .item
-    font-size: 13px
-
-  .grid
-    margin-left: 150px
-
-  .row
-    margin-bottom: 40px
-
-  .main-site-nav
-    position: absolute
-
-
-  .staging
-    display: none !important
-
 @media screen and (max-width: 960px)
   .section-resume
     .grid
@@ -552,3 +529,53 @@ p
 
   .main-site-nav
     padding: 0 20px
+
+
+@media print
+
+  .main-site-footer
+    display: none
+
+  h2
+    font-size: 24px
+    margin: 0 70px
+
+  h4
+    font-size: 16px
+
+  .mini-intro
+    padding: 50px 0 30px
+    display: none
+
+  .contained
+    padding-bottom: 30px
+
+  .top-divider
+    padding: 20px 0
+
+  .grid p.item
+    margin-bottom: 15px
+    margin-top: 0
+
+  p, .grid .item
+    font-size: 12px
+
+
+  .section-resume
+    margin-top: 35px
+
+    .grid
+      margin-left: 200px
+
+    .row
+      margin-bottom: 10px
+
+      .description
+        font-size: 12px
+        margin-bottom: 20px
+
+  .main-site-nav
+    position: absolute
+
+  .staging
+    display: none !important

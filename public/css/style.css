@@ -43,6 +43,12 @@ h4 {
   color: #9b9b9b;
   margin-bottom: 20px; }
 
+h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #999999; }
+
 p {
   line-height: 1.65em;
   margin: 20px 0; }
@@ -182,6 +188,12 @@ p {
 .section-resume .row {
   clear: both;
   margin-bottom: 50px; }
+  .section-resume .row .description {
+    margin: 0 0 30px; }
+    .section-resume .row .description ul {
+      margin-left: 20px; }
+    .section-resume .row .description li {
+      margin-bottom: 6px; }
 .section-resume .grid {
   margin-left: 255px; }
   .section-resume .grid .item {
@@ -364,33 +376,6 @@ p {
     top: 50%;
     transform: translate(-50%, -50%); }
 
-.resume-mode .main-site-footer {
-  display: none; }
-.resume-mode h2 {
-  font-size: 24px;
-  margin: 0 70px; }
-.resume-mode h4 {
-  font-size: 16px; }
-.resume-mode .mini-intro {
-  padding: 80px 0 60px; }
-.resume-mode .contained {
-  padding-bottom: 30px; }
-.resume-mode .top-divider {
-  padding: 20px 0; }
-.resume-mode .grid p.item {
-  margin-bottom: 15px;
-  margin-top: 0; }
-.resume-mode p, .resume-mode .grid .item {
-  font-size: 13px; }
-.resume-mode .grid {
-  margin-left: 150px; }
-.resume-mode .row {
-  margin-bottom: 40px; }
-.resume-mode .main-site-nav {
-  position: absolute; }
-.resume-mode .staging {
-  display: none !important; }
-
 @media screen and (max-width: 960px) {
   .section-resume .grid {
     margin-left: 0;
@@ -424,3 +409,46 @@ p {
 
   .main-site-nav {
     padding: 0 20px; } }
+@media print {
+  .main-site-footer {
+    display: none; }
+
+  h2 {
+    font-size: 24px;
+    margin: 0 70px; }
+
+  h4 {
+    font-size: 16px; }
+
+  .mini-intro {
+    padding: 50px 0 30px;
+    display: none; }
+
+  .contained {
+    padding-bottom: 30px; }
+
+  .top-divider {
+    padding: 20px 0; }
+
+  .grid p.item {
+    margin-bottom: 15px;
+    margin-top: 0; }
+
+  p, .grid .item {
+    font-size: 12px; }
+
+  .section-resume {
+    margin-top: 35px; }
+    .section-resume .grid {
+      margin-left: 200px; }
+    .section-resume .row {
+      margin-bottom: 10px; }
+      .section-resume .row .description {
+        font-size: 12px;
+        margin-bottom: 20px; }
+
+  .main-site-nav {
+    position: absolute; }
+
+  .staging {
+    display: none !important; } }
