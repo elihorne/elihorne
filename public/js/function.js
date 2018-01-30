@@ -5,7 +5,6 @@ function linkHandling(){
 
     //if(window.location.pathname == '/') {
       // we are already on the requested page
-    //  console.log('already on the home page page, scroller')
     //} else {
       gotoRoute(targetRoute)
     //}
@@ -16,7 +15,6 @@ function linkHandling(){
     var scrollTarget = $(this).attr('href');
 
     var scrollTarget = scrollTarget.split('#')[1];
-    console.log('scrollTarget = ' + scrollTarget);
     $('html, window').animate({
       scrollTop: $('#core-' + scrollTarget).position().top
     }, 1000)
@@ -27,8 +25,7 @@ function linkHandling(){
 
 function gotoRoute(targetRoute) {
 
-  console.log('goto: ' + targetRoute)
-
+  
   $('html, window').animate({
     scrollTop: 0
   }, 1000)
@@ -55,8 +52,7 @@ function gotoRoute(targetRoute) {
       $('.top-level.work-'+secondLevel).fadeIn();
       $('.top-level.work-'+secondLevel).find('.content').fadeIn();
       $('.staging').fadeIn();
-      //console.log('hello?');
-
+      
     }
     // $('.top-level').fadeOut(function(){
     // });
@@ -69,13 +65,26 @@ function gotoRoute(targetRoute) {
 
 function routing() {
   var targetRoute = window.location.pathname;
-  console.log('routing: arrived at ' + targetRoute);
   gotoRoute(targetRoute);
+}
+
+function weather() {
+  var weatherAPI = 'http://api.openweathermap.org/data/2.5/weather?zip=11211,us&APPID=4dc3da012d000e076504731cc55840e2';
+  var wordAPI = 'https://api.datamuse.com/words?rel_jjb=';
+  $.get(weatherAPI, function (response) {
+    var currentWeather = response.weather[0].main
+    $.get(wordAPI + currentWeather + '&topics=weather', function (response) {
+      var weatherAdjective = response[0].word;
+      $('.weather').text('☁️ ' + weatherAdjective);
+    });
+
+  })
 }
 
 
 function init() {
   // start the engines
   routing();
+  weather();
   linkHandling();
 }
