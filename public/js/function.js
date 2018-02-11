@@ -69,13 +69,30 @@ function routing() {
 }
 
 function weather() {
-  var weatherAPI = 'http://api.openweathermap.org/data/2.5/weather?zip=11211,us&APPID=4dc3da012d000e076504731cc55840e2';
+  var weatherAPI = 'https://api.openweathermap.org/data/2.5/weather?zip=11211,us&APPID=4dc3da012d000e076504731cc55840e2';
   var wordAPI = 'https://api.datamuse.com/words?rel_jjb=';
   $.get(weatherAPI, function (response) {
     var currentWeather = response.weather[0].main
     $.get(wordAPI + currentWeather + '&topics=weather', function (response) {
-      var weatherAdjective = response[0].word;
-      $('.weather').text('☁️ ' + weatherAdjective);
+      var weatherAdjective = response[0].word.toLowerCase();
+      var weatherEmoji = '☁️';
+
+      if(weatherAdjective.indexOf('rain') > -1) {
+        weatherEmoji = '🌧';
+      }
+      if (weatherAdjective.indexOf('cold') > -1) {
+        weatherEmoji = '🌬️';
+      }
+      if (weatherAdjective.indexOf('sun') > -1) {
+        weatherEmoji = '🌞';
+      }
+      if (weatherAdjective.indexOf('cloud') > -1) {
+        weatherEmoji = '🌥️';
+      }
+      if (weatherAdjective.indexOf('snow') > -1) {
+        weatherEmoji = '❄️';
+      }
+      $('.weather').text(weatherEmoji + ' ' + weatherAdjective);
     });
 
   })
