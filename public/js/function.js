@@ -92,6 +92,9 @@ function weather() {
       if (weatherAdjective.indexOf('snow') > -1) {
         weatherEmoji = '❄️';
       }
+      if (weatherAdjective.indexOf('wet') > -1) {
+        weatherEmoji = '💦';
+      }
       $('.weather').text(weatherEmoji + ' ' + weatherAdjective);
     });
 
