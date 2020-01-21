@@ -75,7 +75,7 @@ h3
 
 h4
   color: #9B9B9B
-  margin-bottom: 20px
+  margin-bottom: 15px
 
 h5
   font-weight: bold
@@ -180,7 +180,7 @@ p
     font-family: 'Oswald'
     text-decoration: none
     color: #000
-    font-size: 1.5em
+    font-size: 1.25em
 
     .first-name
       font-weight: 700
@@ -242,12 +242,12 @@ p
 
   .row
     clear: both
-    margin-bottom: 50px
+    margin-bottom: 30px
 
 
 
     .description
-      margin: 0 0 30px
+      margin: 0 0 15px
 
       ul
         margin-left: 20px
@@ -271,12 +271,15 @@ p
         font-weight: bold
         color: #111
 
+      .date-range
+        text-align: right
+
 
 
 
     p.item
       line-height: 1.95em
-      margin-bottom: 20px
+      margin-bottom: 10px
 
     .item-three
       display: grid
@@ -307,7 +310,7 @@ p
 .contained
   max-width: 960px
   margin: 0 auto
-  padding: 0 60px 60px
+  padding: 0 50px 50px
 
 .mini
   max-width: 540px
@@ -490,7 +493,6 @@ p
     .grid
       margin-left: 0
       clear: both
-      padding-top: 10px
 
 @media screen and (max-width: 600px)
 
@@ -533,15 +535,22 @@ p
 
 @media print
 
+  .skills-heading
+    display: none
+
   .main-site-footer
+    display: none
+
+  .main-site-nav .section-nav
     display: none
 
   h2
     font-size: 24px
     margin: 0 70px
 
-  h4
-    font-size: 16px
+  .section-resume
+    h4
+      font-size: 20px
 
   .mini-intro
     padding: 50px 0 30px
@@ -559,20 +568,29 @@ p
 
   p, .grid .item
     font-size: 12px
+    margin: 10px 0
 
 
   .section-resume
-    margin-top: 35px
+    margin-top: 25px
 
     .grid
-      margin-left: 200px
+      margin-left: 0
+      clear: both
+
+    .row.skills-intro
+      margin-bottom: 30px
+      p.item
+        font-size: 1em
+        line-height: 1.5em
 
     .row
       margin-bottom: 10px
 
       .description
         font-size: 12px
-        margin-bottom: 20px
+        margin-bottom: 15px
+
 
   .main-site-nav
     position: absolute
