@@ -9,7 +9,7 @@
             <inline-svg src="logo-kickstarter.svg"></inline-svg>
           </span>
           <span class="date inline-block text-sm block"
-            >2018 to present - Director of Product Design</span
+            >2017 to present - Director of Product Design</span
           >
           <p class="my-6 md:max-w-lg text-lg">
             I hired and manage a world-class design team, responsible for a

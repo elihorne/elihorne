@@ -9,7 +9,7 @@
             <KickstarterLogo />
           </span>
           <span class="date text-gray-600 inline-block text-sm block"
-            >Director of Product Design, 2018-present</span
+            >Director of Product Design, 2017-present</span
           >
           <p class="my-6 md:max-w-lg text-md lg:text-lg">
             I hired and led a world-class product design team, responsible for a
