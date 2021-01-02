@@ -5,7 +5,7 @@
         class="md:flex md:flex-cols max-w-5xl mx-auto gap-12 justify-between"
       >
         <div class="rounded-lg pt-6 overflow-hidden">
-          <img class="w-full" src="@/assets/about/elihorne-avatar-bw.jpg" />
+          <img class="w-full" src="~/assets/about/elihorne-avatar-bw.jpg" />
         </div>
         <div class="col-span-4 max-w-lg col-start-3">
           <h2>About</h2>
@@ -71,8 +71,6 @@
 </template>
 
 <script>
-import Newsletter from '@/components/Newsletter'
-
 export default {}
 </script>
 
