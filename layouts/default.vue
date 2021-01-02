@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import Header from '~/components/header.vue'
-import Footer from '~/components/footer.vue'
 export default {}
 </script>
 
@@ -19,6 +17,7 @@ body {
   color: #000;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
+  background: #fff;
 }
 
 h1,

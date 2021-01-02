@@ -176,15 +176,14 @@
     <div class="bg-white relative z-10 border-t border-gray-400 p-8 py-12">
       <div class="container mx-auto">
         <h4 class="mb-6">Next case study</h4>
-        <Kickstarter />
+        <ToutKickstarter />
       </div>
     </div>
   </section>
 </template>
 <script>
-import Kickstarter from '@/components/work/tout-kickstarter'
 import GoogleLogo from '@/assets/logos/google.svg'
 export default {
-  components: { Kickstarter, GoogleLogo },
+  components: { GoogleLogo },
 }
 </script>

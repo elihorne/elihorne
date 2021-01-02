@@ -2,23 +2,17 @@
   <div class="work-touts p-8 bg-gray-100 bg-opacity-75">
     <div class="mx-auto container">
       <div class="my-10">
-        <Kickstarter />
+        <ToutKickstarter />
       </div>
-      <Google />
+      <ToutGoogle />
       <Experience />
     </div>
   </div>
 </template>
 
 <script>
-import Kickstarter from '@/components/work/tout-kickstarter'
-import Google from '@/components/work/tout-google'
 export default {
   name: 'WorkTouts',
-  components: {
-    Kickstarter,
-    Google,
-  },
 }
 </script>
 

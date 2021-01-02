@@ -540,20 +540,18 @@
     <div class="bg-white relative z-10 border-t border-gray-400 p-8 py-12">
       <div class="container mx-auto">
         <h4 class="mb-6">Next case study</h4>
-        <Google />
+        <ToutGoogle />
       </div>
     </div>
   </section>
 </template>
 <script>
-import Google from '@/components/work/tout-google'
 import KickstarterLogo from '@/assets/logos/kickstarter.svg'
 
 export default {
   layout: 'casestudy',
   components: {
     KickstarterLogo,
-    Google,
   },
 }
 </script>
