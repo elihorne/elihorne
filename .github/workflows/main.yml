@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: kappa0923/nuxtjs-generate-action@v0.1.0
+      - run: npm install
+      - run: npm run generate
       - uses: jakejarvis/firebase-deploy-action@v0.1.0
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
