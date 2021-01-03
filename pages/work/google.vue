@@ -14,12 +14,12 @@
           <span class="centered inline-block mb-2">
             <GoogleLogo />
           </span>
-          <p class="text-xl max-w-md">
+          <p class="text-md md:text-xl max-w-md">
             I led design on Google Docs, Sheets & Forms and contributed core
             features to Slides. I also explored emerging markets and
             experimental editors.
           </p>
-          <ol class="toc mt-6 text-lg">
+          <ol class="toc mt-6 text-md md:text-lg">
             <li class="py-2">
               <a href="#" v-scroll-to="'#consistency'">Consistency</a>
             </li>
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div
-        class="bg-white border-t border-grey-900 relative z-10 shadow-xl px-10 case-study-body"
+        class="bg-white border-t border-grey-900 relative z-10 shadow-xl px-8 md:px-10 case-study-body"
         style="margin-top: 85vh"
         data-aos="fade-up"
         data-aos-duration="1000"
@@ -81,7 +81,7 @@
               harder than it needed to be, and we had the data to prove it.
             </p>
           </div>
-          <div class="grid grid-cols-2 mx-auto max-w-3xl">
+          <div class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-3xl">
             <div class="col">
               <img
                 class="demo"
@@ -118,7 +118,7 @@
         />
         <div class="my-8 mx-auto max-w-2xl">
           <h3 class="text-xl mt-4">Making conversations easier</h3>
-          <div class="grid grid-cols-2 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="col">
               <div class="col-inline">
                 <p>
@@ -146,7 +146,7 @@
           <h3 class="text-xl mt-4">
             Pushing on the boundaries of productivity
           </h3>
-          <div class="grid grid-cols-2">
+          <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="col">
               <p>
                 I led several initiatives to explore what productivity tools

@@ -73,7 +73,7 @@ h4 {
 }
 
 .case-study-body li {
-  @apply ml-8;
+  @apply ml-6;
 }
 
 .case-study-body .caption {

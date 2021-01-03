@@ -6,7 +6,7 @@
         class="fixed z-0 top-0 h-screen left-0 right-0 kickstarter-container w-full flex items-center intro"
       >
         <div
-          class="vertical-center text-center mx-auto px-10"
+          class="vertical-center text-center mx-auto px-8 md:px-10"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
@@ -14,12 +14,12 @@
           <span class="centered inline-block mb-8">
             <KickstarterLogo />
           </span>
-          <p class="text-xl max-w-md">
+          <p class="text-md md:text-xl max-w-md">
             I hired and led a world-class product design team, responsible for a
             clean, consistent, and accessible experience across Web, iOS, and
             Android.
           </p>
-          <ol class="toc mt-6 text-lg">
+          <ol class="toc mt-6 text-md md:text-lg">
             <li class="py-2">
               <a href="#" v-scroll-to="'#creating-a-design-organization'"
                 >Creating a design organization</a
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div
-        class="bg-white border-t border-grey-900 relative z-10 shadow-xl px-10 case-study-body"
+        class="bg-white border-t border-grey-900 relative z-10 shadow-xl px-8 case-study-body"
         style="margin-top: 85vh"
         data-aos="fade-up"
         data-aos-duration="1000"
@@ -183,16 +183,14 @@
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            class="skills-matrix border border-gray-400 shadow-sm bg-white overflow-hidden rounded-md grid grid-cols-5 max-w-4xl mx-auto my-10"
+            class="skills-matrix border border-gray-400 shadow-sm bg-white overflow-hidden rounded-md grid grid-cols-4 max-w-4xl mx-auto my-10"
           >
             <span class="col-header">&nbsp;</span>
             <span class="col-header">Designer</span>
             <span class="col-header">Senior Designer</span>
-            <span class="col-header">Staff Designer</span>
-            <span class="col-header last">Principal Designer</span>
+            <span class="col-header last">Staff Designer</span>
 
             <span class="row-header">Core skills</span>
-            <span><span class="redact"></span></span>
             <span><span class="redact"></span></span>
             <span><span class="redact"></span></span>
             <span><span class="redact"></span></span>
@@ -201,15 +199,8 @@
             <span><span class="redact"></span></span>
             <span><span class="redact"></span></span>
             <span><span class="redact"></span></span>
-            <span><span class="redact"></span></span>
 
             <span class="row-header">Strategic thinking</span>
-            <span><span class="redact"></span></span>
-            <span><span class="redact"></span></span>
-            <span><span class="redact"></span></span>
-            <span><span class="redact"></span></span>
-            <span class="row-header last">Collaboration</span>
-            <span><span class="redact"></span></span>
             <span><span class="redact"></span></span>
             <span><span class="redact"></span></span>
             <span><span class="redact"></span></span>
@@ -558,8 +549,14 @@ export default {
 <style>
 .intro.kickstarter-container svg {
   fill: #05ce78;
-  max-height: 60px;
-  max-width: 350px;
+}
+
+.intro svg {
+  max-width: 320px;
+  width: 100%;
+}
+
+.intro.google-container svg {
 }
 
 .project-template {
@@ -614,7 +611,7 @@ export default {
 }
 
 .design-critique div {
-  padding: 10px;
+  padding: 8px;
 }
 
 .design-critique .early,
@@ -639,12 +636,13 @@ export default {
 
 .design-critique .crit {
   background: #05ce78;
-  padding: 15px;
+  padding: 10px;
   margin: 3px;
   display: block;
   @apply rounded-md;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 
 .design-critique .crit:hover {

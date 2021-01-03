@@ -1,7 +1,7 @@
 <template>
   <div class="border-t-2 mt-20 border-gray-200 py-20">
     <h4 class="text-lg font-bold mb-12">Experience</h4>
-    <p class="text-3xl max-w-4xl mb-12">
+    <p class="text-2xl md:text-3xl max-w-4xl mb-12">
       I have more than 13 years of experience in the product design space, and
       have been managing teams since 2017.
     </p>
