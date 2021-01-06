@@ -5,7 +5,7 @@
         class="md:flex md:flex-cols max-w-5xl mx-auto gap-12 justify-between"
       >
         <div class="rounded-lg pt-6 overflow-hidden">
-          <img class="w-full" src="~/assets/about/elihorne-avatar.jpg" />
+          <img class="w-full" src="~/assets/about/eli-avatar.gif" />
         </div>
         <div class="col-span-4 max-w-lg col-start-3">
           <h2>About</h2>
@@ -14,8 +14,9 @@
           </p>
           <p>
             After growing up in New Orleans, I've spent the last decade in New
-            York City, where I live with my wife, our daughter, and a dog named
-            Clark Kent.
+            York City, where I live with my
+            <a href="https://liztan.com">wife</a>, our daughter, and a dog named
+            <a href="https://www.instagram.com/clarkamuskent/">Clark Kent</a>.
           </p>
           <p>
             I believe in the democratization of access and knowledge that
