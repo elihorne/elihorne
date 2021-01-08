@@ -73,6 +73,7 @@ harder than it needed to be, and we had the data to prove it.
 </div>
 
 </div>
+
 <img
 	src="/work/google/contextual-keyboard-1.png"
 	class="max-w-2xl mx-auto my-4"
@@ -81,25 +82,27 @@ harder than it needed to be, and we had the data to prove it.
 	src="/work/google/contextual-keyboard-2.png"
 	class="max-w-2xl mx-auto my-4"
 />
+
 <div class="my-8 mx-auto max-w-2xl">
 	<h3 class="text-xl mt-4">Making conversations easier</h3>
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-	<div class="col">
-		<div class="col-inline">
-		<p>
-			Commenting was very powerful feature, but usage was
-			dissapointlingly low. I suspected it was because discovery and
-			access to the feature was buried.
-		</p>
-		<p>
-			I designed this feature which appeared near the margin when
-			you hovered in that area, or selected content on the canvas.
-		</p>
-		<p>After launch, comment usage went up significantly.</p>
+		<div class="col">
+			<div class="col-inline">
+				<p>
+					Commenting was very powerful feature, but usage was
+					dissapointlingly low. I suspected it was because discovery and
+					access to the feature was buried.
+				</p>
+				<p>
+					I designed this feature which appeared near the margin when
+					you hovered in that area, or selected content on the canvas.
+				</p>
+				<p>After launch, comment usage went up significantly.</p>
+			</div>
 		</div>
-	</div>
-	<div class="col">
-		<img src="/work/google/instant-comments.gif" />
+		<div class="col">
+			<img src="/work/google/instant-comments.gif" />
+		</div>
 	</div>
 </div>
 
@@ -107,28 +110,30 @@ harder than it needed to be, and we had the data to prove it.
 
 ### Pushing on the boundaries of productivity
 
+<div class="my-8 mx-auto max-w-2xl">
+
 <div class="grid grid-cols-1 md:grid-cols-2">
-<div class="col">
-	<p>
-	I led several initiatives to explore what productivity tools
-	might look like in the future - faster, smarter, better.
-	</p>
-	<p>
-	While these features didn't launch in this exact format, they
-	influenced other "assistive" initiatives at Google.
-	</p>
-</div>
-<div class="col">
-	<img
-	class="vertical-center-image"
-	src="/work/google/experimental-screen-2.gif"
-	/>
-</div>
+	<div class="col">
+		<p>
+		I led several initiatives to explore what productivity tools
+		might look like in the future - faster, smarter, better.
+		</p>
+		<p>
+		While these features didn't launch in this exact format, they
+		influenced other "assistive" initiatives at Google.
+		</p>
+	</div>
+	<div class="col">
+		<img
+		class="vertical-center-image"
+		src="/work/google/experimental-screen-2.gif"
+		/>
+	</div>
 </div>
 <div class="py-6">
-<img
-	style="max-width: 400px; margin: 0 auto; display: block"
-	src="/work/google/experimental-screen-3-crop.gif"
-/>
+	<img
+		style="max-width: 400px; margin: 0 auto; display: block"
+		src="/work/google/experimental-screen-3-crop.gif"
+	/>
 </div>
 </div>
