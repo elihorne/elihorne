@@ -35,6 +35,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxt/components',
+    '@nuxt/content',
     'vue-scrollto/nuxt',
     'nuxt-svg-loader',
     [

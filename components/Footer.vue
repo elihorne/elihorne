@@ -49,6 +49,11 @@ a {
   padding: 1px 2px;
 }
 
+a[aria-hidden] {
+  border: 0;
+  padding: 0;
+}
+
 .connect a:hover {
   border-bottom: 3px solid #fff;
 }

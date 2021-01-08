@@ -1,13 +1,23 @@
 <template>
   <div class="work">
-    <WorkTouts />
+    <div class="bg-gray-100">
+      <div class="container py-6 mx-auto">
+        <WorkTouts :casestudies="casestudies" />
+        <Experience />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import WorkTouts from '@/components/WorkTouts'
-
-export default {}
+export default {
+  async asyncData({ $content }) {
+    const casestudies = await $content('casestudies')
+      .sortBy('start', 'desc')
+      .fetch()
+    return { casestudies }
+  },
+}
 </script>
 <style>
 .work {

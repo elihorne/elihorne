@@ -1,5 +1,5 @@
 <template>
-  <div class="intro container p-10 mt-40 mb-20 mx-auto">
+  <div class="intro mt-40 mb-20">
     <h1 class="text-5xl md:text-6xl mb-4 leading-tight">Hi, I'm Eli.</h1>
     <p class="text-2xl mb-4 font-bold">
       Director of Product Design at
@@ -12,11 +12,11 @@
   </div>
 </template>
 <style>
-.kickstarter-container.intro a {
+.kickstarter.intro a {
   border-bottom: 3px solid #05ce78;
 }
 
-.google-container.intro a {
+.google.intro a {
   border-bottom: 3px solid #4285f4;
 }
 
