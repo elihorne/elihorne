@@ -52,7 +52,6 @@ export default {
 
 .work-container img {
   width: 100%;
-  max-width: 200px;
 }
 
 .work-container .logo img {
