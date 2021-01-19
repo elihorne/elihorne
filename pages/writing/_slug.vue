@@ -1,65 +1,57 @@
 <template>
-  <section class="full-height work-sample work-google top-level">
-    <div class="">
-      <div
-        style="padding-bottom: 15vh"
-        :class="casestudy.slug"
-        class="fixed z-0 top-0 h-screen left-0 right-0 w-full flex items-center intro"
-      >
+  <section class="">
+    <div class="article-wrapper">
+      <div :class="article.slug" class="intro">
         <div
-          class="vertical-center text-center mx-auto px-10"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          class="mt-12 py-12 lg:py-24 article-header border-b border-grey-900"
         >
-          <span class="centered inline-block mb-2">
-            <img :src="casestudy.logo" />
-          </span>
-          <p class="text-md md:text-xl max-w-md">
-            {{ casestudy.blurb }}
-          </p>
-          <ol class="toc mt-6 text-md md:text-lg">
-            <li
-              v-for="link in casestudy.toc"
-              v-if="link.depth == 2"
-              class="py-2"
-            >
-              <a :href="'#' + link.id" v-scroll-to="'#' + link.id">{{
-                link.text
-              }}</a>
-            </li>
-          </ol>
+          <div class="mx-auto container px-8">
+            <h1 class="text-4xl mb-3">{{ article.title }}</h1>
+            <p class="meta text-gray-600 text-sm">
+              <span class="tags mr-4 pr-4 border-r border-grey-900 uppercase">{{
+                article.tags
+              }}</span>
+              <span class="date"
+                >Posted {{ $moment(article.updatedAt).fromNow() }}</span
+              >
+            </p>
+          </div>
         </div>
       </div>
-      <div
-        class="bg-white border-t border-grey-900 relative z-10 shadow-xl px-8 pb-10 md:px-10 case-study-body"
-        style="margin-top: 85vh"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-      >
-        <nuxt-content :document="casestudy" />
+      <div class="article-main lg:flex md:grid-cols-6 container mx-auto">
+        <div
+          class="article-body bg-white lg:border-r lg:border-grey-900 relative z-10 px-8 py-8 pb-10 lg:pr-16 case-study-body lg:w-2/3"
+        >
+          <nuxt-content :document="article" />
+        </div>
+        <div class="article-rail lg:w-1/3 p-8 pt-12 lg:p-12">
+          <h3 class="text-xl">About the author</h3>
+          <p class="my-4">
+            As Director of Product Design at Kickstarter, I'm focused on helping
+            bring creative projects to life. Before that, I worked at Google as
+            a Design Lead on G Suite's productivity tools - Google Docs, Sheets,
+            and Forms.
+          </p>
+          <p><NuxtLink to="/about">Learn more &rarr;</NuxtLink></p>
+        </div>
       </div>
     </div>
-    <div class="bg-white relative z-10 border-t border-gray-400 p-8 py-12">
+    <!-- <div class="bg-white relative z-10 border-t border-gray-400 p-8 py-12">
       <div class="container mx-auto">
-        <h4 class="mb-6">Case studies</h4>
-        <WorkTouts :casestudies="casestudies" />
+        <h4 class="mb-6">Next</h4>
       </div>
-    </div>
+    </div> -->
+    <Newsletter />
   </section>
 </template>
 <script>
-import GoogleLogo from '@/assets/logos/google.svg'
-import casestudyVue from '../../layouts/casestudy.vue'
 export default {
-  components: { GoogleLogo },
   async asyncData({ $content, params }) {
-    const casestudy = await $content('casestudies', params.slug).fetch()
-    const casestudies = await $content('casestudies')
-      //.where({ slug: { $ne: params.slug } })
+    const article = await $content('writing', params.slug).fetch()
+    const articles = await $content('writing')
+      .where({ slug: { $ne: params.slug } })
       .fetch()
-    return { casestudy, casestudies }
+    return { article, articles }
   },
 }
 </script>
@@ -88,6 +80,22 @@ export default {
   @apply my-6;
   @apply max-w-2xl;
   @apply mx-auto;
+}
+
+.article-wrapper {
+  @apply leading-relaxed;
+}
+
+.article-wrapper .case-study-body p {
+  @apply max-w-4xl;
+}
+
+.article-wrapper .case-study-body h2 {
+  @apply max-w-4xl;
+}
+
+.article-wrapper .case-study-body ul {
+  @apply max-w-4xl;
 }
 
 .case-study-body img {

@@ -6,7 +6,7 @@
       <a class="kickstarter" href="https://kickstarter.com">Kickstarter</a>.
     </p>
     <p class="text-lg text-gray-700 max-w-lg leading-relaxed">
-      I operate at the intersection of design and strategy, creating beautiful,
+      I'm a product leader focused on design and strategy, creating beautiful,
       usable experiences that provide meaningful value.
     </p>
   </div>

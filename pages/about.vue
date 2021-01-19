@@ -1,13 +1,11 @@
 <template>
   <div class="about">
     <div class="container mx-auto p-8">
-      <div
-        class="md:flex md:flex-cols max-w-5xl mx-auto gap-12 justify-between"
-      >
-        <div class="rounded-lg pt-6 overflow-hidden">
+      <div class="md:flex md:flex-cols mx-auto gap-24">
+        <div class="rounded-lg pt-6 md:w-1/3 overflow-hidden">
           <img class="w-full" src="~/assets/about/eli-avatar.gif" />
         </div>
-        <div class="col-span-4 max-w-lg col-start-3">
+        <div class="md:w-2/3 max-w-2xl">
           <h2>About</h2>
           <p class="text-2xl">
             I am a product design leader with over 13 years in the industry.

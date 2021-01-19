@@ -1,14 +1,17 @@
 <template>
-  <header class="absolute top-0 left-0 right-0 global px-3 py-6 z-20">
-    <div class="container mx-auto">
-      <NuxtLink to="/" class="p-2 nav-item item-brand uppercase font-bold"
+  <header class="absolute text-sm top-0 left-0 right-0 global py-6 z-20">
+    <div class="container mx-auto px-4 md:px-8">
+      <NuxtLink to="/" class="py-1 nav-item item-brand uppercase font-bold"
         >Eli Horne</NuxtLink
       >
       <nav class="float-right">
-        <NuxtLink to="/work" class="p-2 px-3 nav-item uppercase item-work"
+        <NuxtLink to="/work" class="py-1 mx-3 nav-item uppercase item-work"
           >Work</NuxtLink
         >
-        <NuxtLink to="/about" class="p-2 px-3 nav-item uppercase item-play"
+        <NuxtLink to="/writing" class="py-1 mx-3 nav-item uppercase item-work"
+          >Writing</NuxtLink
+        >
+        <NuxtLink to="/about" class="py-1 mx-3 nav-item uppercase item-play"
           >About</NuxtLink
         >
       </nav>
@@ -17,6 +20,21 @@
 </template>
 <style>
 header a {
-  border-bottom: 0;
+  border-bottom: 3px solid #fff;
+  transition: all 0.35s ease-in-out;
+}
+
+header a:hover {
+  border-bottom: 3px solid #000;
+}
+
+header .nuxt-link-exact-active {
+  font-weight: bold;
+  border-bottom: 3px solid #3cf;
+}
+
+header nav .nuxt-link-active {
+  font-weight: bold;
+  border-bottom: 3px solid #3cf;
 }
 </style>
