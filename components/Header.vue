@@ -8,9 +8,9 @@
         <NuxtLink to="/work" class="py-1 mx-3 nav-item uppercase item-work"
           >Work</NuxtLink
         >
-        <NuxtLink to="/writing" class="py-1 mx-3 nav-item uppercase item-work"
+        <!-- <NuxtLink to="/writing" class="py-1 mx-3 nav-item uppercase item-work"
           >Writing</NuxtLink
-        >
+        > -->
         <NuxtLink to="/about" class="py-1 mx-3 nav-item uppercase item-play"
           >About</NuxtLink
         >
