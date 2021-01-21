@@ -1,6 +1,6 @@
 <template>
   <header class="absolute text-sm top-0 left-0 right-0 global py-6 z-20">
-    <div class="container mx-auto px-4 md:px-8">
+    <div class="container mx-auto px-6 md:px-8">
       <NuxtLink to="/" class="py-1 nav-item item-brand uppercase font-bold"
         >Eli Horne</NuxtLink
       >

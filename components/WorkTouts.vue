@@ -1,5 +1,5 @@
 <template>
-  <div class="work-touts bg-opacity-75 lg:flex w-full lg:gap-10">
+  <div class="work-touts bg-opacity-75 px-6 lg:flex w-full lg:gap-10">
     <div v-for="casestudy in casestudies" class="my-8 w-full">
       <NuxtLink :to="{ path: '/work/' + casestudy.slug }">
         <div

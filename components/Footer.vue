@@ -1,7 +1,7 @@
 <template>
   <footer class="footer relative z-20 global text-sm text-white">
-    <div class="bg-black bg-opacity-90 p-8">
-      <div class="connect mx-auto container py-12 px-4 md:px-8">
+    <div class="bg-black bg-opacity-90">
+      <div class="connect mx-auto container py-12 px-6 md:px-8">
         <nav class="mb-6">
           <NuxtLink class="font-bold uppercase" to="/">Eli Horne</NuxtLink>
         </nav>
