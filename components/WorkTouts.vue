@@ -1,43 +1,46 @@
 <template>
-  <div class="work-touts bg-opacity-75 px-6 lg:flex w-full lg:gap-10">
-    <div v-for="casestudy in casestudies" class="my-8 w-full">
-      <NuxtLink :to="{ path: '/work/' + casestudy.slug }">
-        <div
-          :class="casestudy.slug"
-          class="work-container border border-gray-300 bg-gray-400 rounded-lg overflow-hidden"
-        >
-          <div class="">
-            <div
-              class="flex flex-col md:flex-row flex-grow lg:flex-col items-center justify-between"
-            >
-              <div class="p-8 md:p-8 lg:p-10">
-                <span class="logo block mb-2">
-                  <img :src="casestudy.logo" />
-                </span>
-                <span class="date text-gray-600 inline-block text-sm"
-                  >{{ casestudy.role }}, {{ casestudy.start }}-{{
-                    casestudy.end
-                  }}</span
-                >
-                <p class="my-6 md:max-w-md lg:max-w-xl text-md lg:text-lg">
-                  {{ casestudy.blurb }}
-                </p>
-                <NuxtLink
-                  :to="{ path: '/work/' + casestudy.slug }"
-                  class="button"
-                  >View case study</NuxtLink
-                >
-              </div>
+  <div class="work-touts bg-opacity-75 px-6 w-full">
+    <h4 class="text-lg font-bold mb-12">Case studies</h4>
+    <div class="lg:flex lg:gap-10">
+      <div v-for="casestudy in casestudies" class="w-full mb-6">
+        <NuxtLink :to="{ path: '/work/' + casestudy.slug }">
+          <div
+            :class="casestudy.slug"
+            class="work-container border h-full border-gray-300 bg-gray-400 rounded-lg overflow-hidden"
+          >
+            <div class="">
               <div
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                class="mock-up p-4 max-w-2xl md:max-w-md lg:max-w-xl"
+                class="flex flex-col md:flex-row flex-grow lg:flex-col items-center justify-between"
               >
-                <img :src="casestudy.thumbnail" />
+                <div class="p-8 md:p-8 lg:p-10">
+                  <span class="logo block mb-2">
+                    <img :src="casestudy.logo" />
+                  </span>
+                  <span class="date text-gray-600 inline-block text-sm"
+                    >{{ casestudy.role }}, {{ casestudy.start }}-{{
+                      casestudy.end
+                    }}</span
+                  >
+                  <p class="my-6 md:max-w-md lg:max-w-xl text-md lg:text-lg">
+                    {{ casestudy.blurb }}
+                  </p>
+                  <NuxtLink
+                    :to="{ path: '/work/' + casestudy.slug }"
+                    class="button"
+                    >View case study</NuxtLink
+                  >
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  class="mock-up p-4 max-w-2xl md:max-w-md lg:max-w-xl"
+                >
+                  <img :src="casestudy.thumbnail" />
+                </div>
               </div>
-            </div>
-          </div></div
-      ></NuxtLink>
+            </div></div
+        ></NuxtLink>
+      </div>
     </div>
   </div>
 </template>
@@ -61,8 +64,8 @@ export default {
 
 .work-container .logo img {
   width: 100%;
-  max-width: 250px;
-  max-height: 50px;
+  max-width: 260px;
+  height: 40px;
   text-align: left;
 }
 

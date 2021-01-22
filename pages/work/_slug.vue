@@ -39,27 +39,55 @@
         data-aos-easing="ease-in-out"
       >
         <nuxt-content :document="casestudy" />
+
+        <div v-for="project in projects" v-bind:key="project.id">
+          <div
+            class="project-template max-w-3xl my-8 mx-auto overflow-hidden bg-gray-200 rounded-md"
+          >
+            <div class="meta col-span-2">
+              <span class="name">{{ project.title }}</span>
+              <div
+                v-if="project.art"
+                class="art overflow-hidden mb-6 rounded-md background-black col-span-4"
+              >
+                <img :src="project.art" />
+              </div>
+              <div v-if="project.video" class="mb-6">
+                <video autoplay muted loop :src="project.video" />
+              </div>
+
+              <nuxt-content :document="project" />
+
+              <a class="button" :href="project.targetURL">{{
+                project.targetText
+              }}</a>
+              <div class="border-t border-gray-400 pt-4 mt-6">
+                <span class="label text-gray-600">{{ project.date }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="bg-white relative z-10 border-t border-gray-400 p-8 py-12">
       <div class="container mx-auto">
-        <h4 class="mb-6">Case studies</h4>
         <WorkTouts :casestudies="casestudies" />
       </div>
     </div>
   </section>
 </template>
 <script>
-import GoogleLogo from '@/assets/logos/google.svg'
 import casestudyVue from '../../layouts/casestudy.vue'
 export default {
-  components: { GoogleLogo },
   async asyncData({ $content, params }) {
     const casestudy = await $content('casestudies', params.slug).fetch()
     const casestudies = await $content('casestudies')
       //.where({ slug: { $ne: params.slug } })
       .fetch()
-    return { casestudy, casestudies }
+    const projects = await $content('projects')
+      .where({ brand: params.slug })
+      .fetch()
+    return { casestudy, casestudies, projects }
   },
 }
 </script>
@@ -119,6 +147,12 @@ export default {
 
 .project-template .meta {
   @apply p-6;
+}
+
+.project-template h2 {
+  @apply uppercase text-sm font-bold;
+  margin: 0;
+  font-family: 'Source Sans Pro';
 }
 
 .project-template .name {

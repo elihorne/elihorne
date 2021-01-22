@@ -63,6 +63,19 @@
   border-bottom: 3px solid #3cf;
 }
 
+p a {
+  border-bottom: 2px solid rgba(51, 204, 255, 0.75);
+  transition: all 0.35s ease-in-out;
+  background: linear-gradient(transparent);
+  background-position: 100% 0;
+}
+
+p a:hover {
+  border-bottom: 2px solid #3cf;
+  background-position: 100% 80%;
+  background: linear-gradient(transparent, rgba(51, 204, 255, 0.1));
+}
+
 a[aria-hidden] {
   border: 0;
   padding: 0;

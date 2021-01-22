@@ -4,7 +4,7 @@
       <Intro />
     </div>
     <div class="bg-gray-100">
-      <div class="container py-4 md:py-8 mx-auto">
+      <div class="container py-4 md:py-10 mx-auto">
         <WorkTouts :casestudies="casestudies" />
         <Experience />
       </div>

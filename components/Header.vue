@@ -20,7 +20,7 @@
 </template>
 <style>
 header a {
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid transparent;
   transition: all 0.35s ease-in-out;
 }
 
