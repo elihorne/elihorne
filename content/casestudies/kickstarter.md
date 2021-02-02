@@ -2,7 +2,7 @@
 title: Kickstarter
 start: 2017
 end: present
-role: Director of Product Design
+role: VP, Product and Design
 blurb: I hired and led a world-class product design team, responsible for a
   clean, consistent and accessible experience across web, iOS and
   Android.
