@@ -2,7 +2,7 @@
   <div class="intro mt-40 mb-20">
     <h1 class="text-5xl md:text-6xl mb-4 leading-tight">Hi, I'm Eli.</h1>
     <p class="text-2xl mb-4 font-bold">
-      VP of Product and Design at
+      VP, Product and Design at
       <a class="kickstarter" href="https://kickstarter.com">Kickstarter</a>.
     </p>
     <p class="text-lg text-gray-700 max-w-lg leading-relaxed">

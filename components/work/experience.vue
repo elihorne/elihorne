@@ -12,7 +12,7 @@
             >Kickstarter</a
           ></span
         >
-        <p class="title-date">VP of Product and Design, 2017-Present</p>
+        <p class="title-date">VP, Product and Design, 2017-Present</p>
         <p class="text-md max-w-lg">
           Hired and managed a team of product designers and a UX writer,
           creating a supportive environment for them to grow and do their best
