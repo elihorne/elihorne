@@ -27,7 +27,7 @@
         <div class="article-rail lg:w-1/3 p-8 pt-12 lg:p-12">
           <h3 class="text-xl">About the author</h3>
           <p class="my-4">
-            As Director of Product Design at Kickstarter, I'm focused on helping
+            As VP of Product and Design at Kickstarter, I'm focused on helping
             bring creative projects to life. Before that, I worked at Google as
             a Design Lead on G Suite's productivity tools - Google Docs, Sheets,
             and Forms.

@@ -24,7 +24,7 @@
           </p>
           <h2>Career</h2>
           <p>
-            As Director of Product Design at Kickstarter, I'm focused on helping
+            As VP of Product and Design at Kickstarter, I'm focused on helping
             bring creative projects to life. Before that, I worked at Google as
             a Design Lead on G Suite's productivity tools - Google Docs, Sheets,
             and Forms.
