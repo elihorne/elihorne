@@ -62,8 +62,29 @@
           </p>
         </div>
       </div>
-      <p></p>
+      <div
+        class="speaking border-gray-400 border-t mt-5 pt-5 md:flex md:flex-cols mx-auto gap-24"
+      >
+        <div class="w-1/3">
+          <h2>Speaking</h2>
+        </div>
+        <div class="md:w-2/3 max-w-2xl">
+          <ul>
+            <li class="flex">
+              <span class="year">2021</span>
+              <span class="event">NOVA Summit, Keynote speaker</span>
+              <span class="location">Virtual</span>
+            </li>
+          </ul>
+          <p>
+            I'm available to speak at events regarding product design and
+            management, building product teams, and consumer applications.
+            <a href="mailto:me@elihorne.com">Please get in touch</a>.
+          </p>
+        </div>
+      </div>
     </div>
+
     <Newsletter />
   </div>
 </template>
@@ -77,10 +98,31 @@ export default {}
   @apply pt-20;
 }
 .about h2 {
-  @apply py-3;
-  @apply mt-3;
+  @apply py-0;
+  @apply mt-6;
 }
 .about p {
   @apply py-3;
+}
+
+.speaking ul {
+  @apply mt-6;
+  @apply mb-3;
+}
+
+.speaking .year {
+  @apply text-gray-700;
+  display: inline-block;
+  margin-right: 20px;
+  @apply font-bold;
+  @apply flex-none;
+}
+
+.speaking .event {
+  @apply flex-1;
+}
+
+.speaking .date {
+  @apply flex-none;
 }
 </style>
