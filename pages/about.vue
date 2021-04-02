@@ -6,7 +6,6 @@
           <img class="w-full" src="~/assets/about/eli-avatar.gif" />
         </div>
         <div class="md:w-2/3 max-w-2xl">
-          <h2>About</h2>
           <p class="text-2xl">
             I am a product design leader with over 13 years in the industry.
           </p>
@@ -78,7 +77,8 @@ export default {}
   @apply pt-20;
 }
 .about h2 {
-  @apply py-6;
+  @apply py-3;
+  @apply mt-3;
 }
 .about p {
   @apply py-3;

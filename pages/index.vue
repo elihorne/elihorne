@@ -3,6 +3,7 @@
     <div class="container p-6 md:p-8 mx-auto">
       <Intro />
     </div>
+
     <div class="bg-gray-100">
       <div class="container py-4 md:py-10 mx-auto">
         <WorkTouts :casestudies="casestudies" />
