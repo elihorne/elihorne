@@ -1,93 +1,55 @@
 <template>
-  <section class="full-height work-sample work-google top-level">
-    <div class="">
-      <div
-        style="padding-bottom: 15vh"
-        :class="casestudy.slug"
-        class="fixed z-0 top-0 h-screen left-0 right-0 w-full flex items-center intro"
-      >
+  <section class="">
+    <div class="article-wrapper">
+      <div class="article-main">
         <div
-          class="vertical-center text-center mx-auto px-10"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          class="article-body pt-20 px-8 container mx-auto bg-white relative z-10 pb-10 case-study-body"
         >
-          <span class="centered inline-block mb-2">
-            <img :src="casestudy.logo" />
-          </span>
-          <p class="text-md md:text-xl max-w-md">
-            {{ casestudy.blurb }}
-          </p>
-          <ol class="toc mt-6 text-md md:text-lg">
-            <li
-              v-for="link in casestudy.toc"
-              v-if="link.depth == 2"
-              class="py-2"
-            >
-              <a :href="'#' + link.id" v-scroll-to="'#' + link.id">{{
-                link.text
-              }}</a>
-            </li>
-          </ol>
+          <vue-plyr>
+            <div
+              data-plyr-provider="youtube"
+              v-bind:data-plyr-embed-id="video.youtube"
+            ></div>
+          </vue-plyr>
+          <!-- <nuxt-content :document="video" /> -->
         </div>
       </div>
-      <div
-        class="bg-white border-t border-grey-900 relative z-10 shadow-xl px-8 pb-10 md:px-10 case-study-body"
-        style="margin-top: 85vh"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-      >
-        <nuxt-content :document="casestudy" />
-
-        <div v-for="project in projects" v-bind:key="project.id">
-          <div
-            class="project-template max-w-3xl my-8 mx-auto overflow-hidden bg-gray-200 rounded-md"
-          >
-            <div class="meta col-span-2">
-              <span class="name">{{ project.title }}</span>
-              <div
-                v-if="project.art"
-                class="art overflow-hidden mb-6 rounded-md background-black col-span-4"
+      <div :class="video.slug" class="intro">
+        <div class="py-12 article-header border-b border-grey-900">
+          <div class="mx-auto container px-8">
+            <h1 class="text-4xl mb-3">{{ video.title }}</h1>
+            <p class="meta text-gray-600 text-sm">
+              <span class="tags mr-4 pr-4 uppercase">{{ video.tags }}</span>
+              <span class="date"
+                >Posted {{ $moment(video.updatedAt).fromNow() }}</span
               >
-                <img :src="project.art" />
-              </div>
-              <div v-if="project.video" class="mb-6">
-                <video autoplay muted loop :src="project.video" />
-              </div>
-
-              <nuxt-content :document="project" />
-
-              <a class="button" :href="project.targetURL">{{
-                project.targetText
-              }}</a>
-              <div class="border-t border-gray-400 pt-4 mt-6">
-                <span class="label text-gray-600">{{ project.date }}</span>
-              </div>
-            </div>
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="bg-white relative z-10 border-t border-gray-400 p-8 py-12">
+    <!-- <div class="bg-white relative z-10 border-t border-gray-400 p-8 py-12">
       <div class="container mx-auto">
-        <WorkTouts :casestudies="casestudies" />
+        <h4 class="mb-6">Next</h4>
+      </div>
+    </div> -->
+    <div class="bg-white relative z-10 border-t border-gray-200 p-8 py-12">
+      <div class="container mx-auto">
+        <h3 class="mb-2">Watch this next</h3>
+        <VideoRow :videos="videos" />
       </div>
     </div>
+    <Newsletter />
   </section>
 </template>
 <script>
-import casestudyVue from '../../layouts/casestudy.vue'
 export default {
   async asyncData({ $content, params }) {
-    const casestudy = await $content('casestudies', params.slug).fetch()
-    const casestudies = await $content('casestudies')
-      //.where({ slug: { $ne: params.slug } })
+    const video = await $content('videos', params.slug).fetch()
+    const videos = await $content('videos')
+      .where({ slug: { $ne: params.slug } })
       .fetch()
-    const projects = await $content('work-projects')
-      .where({ brand: params.slug })
-      .fetch()
-    return { casestudy, casestudies, projects }
+    return { video, videos }
   },
 }
 </script>
@@ -116,6 +78,22 @@ export default {
   @apply my-6;
   @apply max-w-2xl;
   @apply mx-auto;
+}
+
+.article-wrapper {
+  @apply leading-relaxed;
+}
+
+.article-wrapper .case-study-body p {
+  @apply max-w-4xl;
+}
+
+.article-wrapper .case-study-body h2 {
+  @apply max-w-4xl;
+}
+
+.article-wrapper .case-study-body ul {
+  @apply max-w-4xl;
 }
 
 .case-study-body img {
@@ -147,12 +125,6 @@ export default {
 
 .project-template .meta {
   @apply p-6;
-}
-
-.project-template h2 {
-  @apply uppercase text-sm font-bold;
-  margin: 0;
-  font-family: 'Source Sans Pro';
 }
 
 .project-template .name {

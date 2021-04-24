@@ -48,9 +48,8 @@
             6 months driving a 1988 VW Vanagon around America.
           </p>
           <p>
-            You can see my photos on
-            <a href="https://instagram.com/elihorne">Instagram</a>, and my
-            videos on <a href="https://youtube.com/elihorne">YouTube</a>.
+            You can see <nuxt-link to="/video">my videos here</nuxt-link> and
+            photos on <a href="https://instagram.com/elihorne">Instagram</a>.
           </p>
           <h2>Misc</h2>
           <p>

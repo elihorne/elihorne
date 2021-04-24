@@ -8,6 +8,9 @@
         <NuxtLink to="/work" class="py-1 mx-3 nav-item uppercase item-work"
           >Work</NuxtLink
         >
+        <NuxtLink to="/video" class="py-1 mx-3 nav-item uppercase item-work"
+          >Video</NuxtLink
+        >
         <!-- <NuxtLink to="/writing" class="py-1 mx-3 nav-item uppercase item-work"
           >Writing</NuxtLink
         > -->
@@ -28,12 +31,12 @@ header a:hover {
   border-bottom: 3px solid #000;
 }
 
-header .nuxt-link-exact-active {
+.nuxt-link-exact-active {
   font-weight: bold;
   border-bottom: 3px solid #3cf;
 }
 
-header nav .nuxt-link-active {
+header .nuxt-link-active {
   font-weight: bold;
   border-bottom: 3px solid #3cf;
 }
