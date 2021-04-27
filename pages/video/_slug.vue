@@ -5,7 +5,7 @@
         <div
           class="article-body pt-20 px-8 container mx-auto bg-white relative z-10 pb-10 case-study-body"
         >
-          <div class="h-auto">
+          <div class="rounded-lg overflow-hidden">
             <vue-plyr>
               <div
                 data-plyr-provider="youtube"
