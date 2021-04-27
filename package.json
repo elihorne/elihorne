@@ -2,6 +2,9 @@
   "name": "elihorne-nuxt",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=14.16.1"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -17,14 +20,15 @@
     "core-js": "^3.11.0",
     "nuxt": "^2.15.4",
     "nuxt-svg-loader": "^1.2.0",
-    "postcss": "^8.2.12",
+    "postcss": "^8.2.10",
     "vue-plyr": "^7.0.0",
-    "vue-scrollto": "^2.20.0"
+    "vue-scrollto": "^2.20.0",
+    "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
     "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/svg": "^0.1.12",
-    "eslint": "^7.24.0",
+    "eslint": "^7.25.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",

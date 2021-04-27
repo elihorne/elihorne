@@ -5,13 +5,16 @@
         <div
           class="article-body pt-20 px-8 container mx-auto bg-white relative z-10 pb-10 case-study-body"
         >
-          <vue-plyr>
-            <div
-              data-plyr-provider="youtube"
-              v-bind:data-plyr-embed-id="video.youtube"
-            ></div>
-          </vue-plyr>
-          <!-- <nuxt-content :document="video" /> -->
+          <div class="h-auto">
+            <vue-plyr>
+              <div
+                data-plyr-provider="youtube"
+                v-bind:data-plyr-embed-id="video.youtube"
+              ></div>
+            </vue-plyr>
+          </div>
+          <!-- <youtube @ready="ready" :video-id="video.youtube" /> -->
+          <!-- <nuxt-content :document="video" />  -->
         </div>
       </div>
       <div :class="video.slug" class="intro">
@@ -44,6 +47,16 @@
 </template>
 <script>
 export default {
+  head() {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://unpkg.com/vue-plyr/dist/vue-plyr.css',
+        },
+      ],
+    }
+  },
   async asyncData({ $content, params }) {
     const video = await $content('videos', params.slug).fetch()
     const videos = await $content('videos')
