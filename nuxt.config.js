@@ -20,11 +20,7 @@ export default {
   css: ['aos/dist/aos.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-    '@/plugins/aos.js',
-    { src: '@/plugins/plyr', mode: 'client' },
-    { src: '@/plugins/vue-youtube-embed', ssr: false },
-  ],
+  plugins: ['@/plugins/aos.js', { src: '@/plugins/plyr', mode: 'client' }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

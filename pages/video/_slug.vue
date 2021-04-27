@@ -13,7 +13,6 @@
               ></div>
             </vue-plyr>
           </div>
-          <!-- <youtube @ready="ready" :video-id="video.youtube" /> -->
           <!-- <nuxt-content :document="video" />  -->
         </div>
       </div>
