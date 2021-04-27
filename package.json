@@ -22,8 +22,7 @@
     "nuxt-svg-loader": "^1.2.0",
     "postcss": "^8.2.10",
     "vue-plyr": "^7.0.0",
-    "vue-scrollto": "^2.20.0",
-    "vue-youtube-embed": "^2.2.2"
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "@nuxtjs/moment": "^1.6.1",
