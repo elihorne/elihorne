@@ -1,10 +1,10 @@
 <template>
   <div class="grid">
-    <div class="grid gap-5 grid-col-1 md:grid-cols-3 lg:grid-cols-4">
+    <div class="grid gap-0 grid-col-1 md:grid-cols-3 lg:grid-cols-4">
       <div
         v-for="video in videos"
         :key="video.index"
-        class="rounded-md overflow-hidden bg-white mr-4 shadow-md"
+        class="overflow-hidden bg-white shadow-md"
       >
         <VideoThumbnail :video="video" />
       </div>

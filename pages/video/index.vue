@@ -1,10 +1,6 @@
 <template>
   <div class="work">
-    <div class="bg-gray-100">
-      <div class="container px-4 md:px-8 py-24 mx-auto">
-        <VideoSection :videos="videos" />
-      </div>
-    </div>
+    <VideoSection :videos="videos" />
     <Newsletter />
   </div>
 </template>

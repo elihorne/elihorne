@@ -1,26 +1,28 @@
 <template>
   <div>
-    <h1 class="text-3xl mb-8">Video</h1>
-    <p class="text-lg md:w-3/4 text-gray-700">
-      For as long as I can remember, I've loved moving images and compelling
-      stories. I went to film school but ultimately fell in love with technology
-      and product design. These short videos are my way of scratching that itch.
-    </p>
-    <nav class="uppercase my-8 p-3 border-t border-b border-gray-300">
-      <nuxt-link class="mr-3" to="/video">All</nuxt-link>
-      <nuxt-link class="mr-3" to="/video/tag/noodles-and-bourbon"
-        >Noodles &amp; Bourbon</nuxt-link
-      >
-      <nuxt-link class="mr-3" to="/video/tag/flight-school"
-        >Flight School</nuxt-link
-      >
-      <nuxt-link class="mr-3" to="/video/tag/exploration"
-        >Urban Exploration</nuxt-link
-      >
-      <nuxt-link class="mr-3" to="/video/tag/travel">Travel</nuxt-link>
-    </nav>
-
-    <VideoGrid :videos="videos" />
+    <div class="container px-8 py-12 mx-auto">
+      <h1 class="text-3xl mb-8">Video</h1>
+      <p class="text-xl text-gray-700">
+        For as long as I can remember, I've loved moving images and compelling
+        stories. I went to film school but ultimately fell in love with
+        technology and product design. These short videos are my way of
+        scratching that itch.
+      </p>
+      <nav class="uppercase mt-8 py-3 bg-white">
+        <nuxt-link class="mr-3" to="/video">All</nuxt-link>
+        <nuxt-link class="mr-3" to="/video/tag/noodles-and-bourbon"
+          >Noodles &amp; Bourbon</nuxt-link
+        >
+        <nuxt-link class="mr-3" to="/video/tag/flight-school"
+          >Flight School</nuxt-link
+        >
+        <nuxt-link class="mr-3" to="/video/tag/exploration"
+          >Urban Exploration</nuxt-link
+        >
+        <nuxt-link class="mr-3" to="/video/tag/travel">Travel</nuxt-link>
+      </nav>
+      <VideoGrid :videos="videos" />
+    </div>
   </div>
 </template>
 
