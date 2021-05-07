@@ -1,6 +1,6 @@
 <template>
   <div class="work">
-    <div class="bg-gray-100">
+    <div class="">
       <div class="container py-8 mx-auto">
         <WorkTouts :casestudies="casestudies" />
         <Experience />
@@ -19,8 +19,3 @@ export default {
   },
 }
 </script>
-<style>
-.work {
-  @apply pt-20;
-}
-</style>

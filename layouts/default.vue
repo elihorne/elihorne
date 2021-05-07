@@ -30,4 +30,8 @@ h4 {
 h3 {
   font-weight: 900;
 }
+
+h4 {
+  @apply text-lg;
+}
 </style>

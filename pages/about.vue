@@ -21,7 +21,7 @@
             artificially scarce and prohibitively expensive can be made
             available to every person with a screen and an internet connection.
           </p>
-          <h2>Career</h2>
+          <h3>Career</h3>
           <p>
             As VP of Product and Design at Kickstarter, I'm focused on helping
             bring creative projects to life. Before that, I worked at Google as
@@ -31,7 +31,7 @@
           <p>
             &rarr; <NuxtLink to="/work" class="mr-2">Case studies</NuxtLink>
           </p>
-          <h2>Education</h2>
+          <h3>Education</h3>
           <p>
             In pursuit of my lifelong interest in storytelling, I majored in
             cinematography at Temple University's School of Communication and
@@ -40,7 +40,7 @@
             nights and weekends, and I had loved every minute of it. The rest is
             history.
           </p>
-          <h2>Interests</h2>
+          <h3>Interests</h3>
           <p>
             I think life is best lived through experiences. For me, that means
             traveling and sharing stories through photos and videos. In 2015, I
@@ -51,7 +51,7 @@
             You can see <nuxt-link to="/video">my videos here</nuxt-link> and
             photos on <a href="https://instagram.com/elihorne">Instagram</a>.
           </p>
-          <h2>Misc</h2>
+          <h3>Misc</h3>
           <p>
             I enjoy keeping up with new web technologies, and this site is my
             playground. The current version is built with
@@ -65,7 +65,7 @@
         class="speaking border-gray-400 border-t mt-5 pt-5 md:flex md:flex-cols mx-auto gap-24"
       >
         <div class="w-1/3">
-          <h2>Speaking</h2>
+          <h3>Speaking</h3>
         </div>
         <div class="md:w-2/3 max-w-2xl">
           <ul>
@@ -96,7 +96,7 @@ export default {}
 .about {
   @apply pt-20;
 }
-.about h2 {
+.about h3 {
   @apply py-0;
   @apply mt-6;
 }

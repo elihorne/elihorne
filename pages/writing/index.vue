@@ -33,8 +33,3 @@ export default {
   },
 }
 </script>
-<style>
-.work {
-  @apply pt-20;
-}
-</style>

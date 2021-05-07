@@ -1,5 +1,5 @@
 <template>
-  <div class="work">
+  <div class="work mt-12">
     <VideoSection :videos="videos" />
     <Newsletter />
   </div>
@@ -18,8 +18,3 @@ export default {
   },
 }
 </script>
-<style>
-.work {
-  @apply pt-20;
-}
-</style>

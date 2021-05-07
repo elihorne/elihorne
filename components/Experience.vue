@@ -14,9 +14,9 @@
         >
         <p class="title-date">VP, Product and Design, 2017-Present</p>
         <p class="text-md max-w-lg">
-          Hired and managed a team of product designers and a UX writer,
-          creating a supportive environment for them to grow and do their best
-          work.
+          Hired and managed a team of product designers, product managers, and a
+          UX writer, creating a supportive environment for them to grow and do
+          their best work.
         </p>
       </div>
       <div>

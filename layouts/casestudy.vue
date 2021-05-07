@@ -24,6 +24,7 @@ h1,
 h2,
 h4 {
   font-family: 'Playfair Display', serif;
+  @apply text-5xl;
 }
 
 .button {
