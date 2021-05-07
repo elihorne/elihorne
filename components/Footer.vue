@@ -55,8 +55,9 @@
   display: inline-block;
   font-weight: bold;
   padding: 1px 2px;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid transparent;
   transition: all 0.35s ease-in-out;
+  @apply text-white;
 }
 
 .footer a:hover {
