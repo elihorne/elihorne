@@ -7,9 +7,11 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
+  async asyncData({ $content, params }) {
+    var filter = params.slug
+    filter = filter.replace(/-/g, ' ')
     const videos = await $content('videos')
-      //.sortBy('date', 'asc')
+      .where({ tags: { $containsAny: [filter] } })
       .fetch()
 
     return {

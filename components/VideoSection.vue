@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container px-8 mx-auto">
+    <div class="container px-8 mb-8 mx-auto">
       <h1 class="mb-8">Video</h1>
       <p class="text-xl text-gray-700">
         For as long as I can remember, I've loved moving images and compelling

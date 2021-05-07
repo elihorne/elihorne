@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:container intro mt-24 mb-0 md:flex mx-5 mt-14 md:m-0 md:mt-24">
+  <div class="sm:container intro mb-0 md:flex mx-5 md:m-0">
     <div class="flex-1 bg-gradient-to-r from-indigo-500 to-indigo-300">
       <img
         class="w-full object-bottom"
@@ -8,7 +8,7 @@
     </div>
     <div class="flex-1">
       <h1
-        class="text-6xl text-shadow-white lg:-ml-24 lg:text-8xl md:-ml-10 my-6 leading-tight"
+        class="text-6xl text-shadow-white lg:-ml-24 lg:text-8xl md:-ml-10 my-10 leading-tight"
       >
         Hi, I'm Eli.
       </h1>

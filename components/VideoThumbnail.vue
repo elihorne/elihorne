@@ -5,7 +5,7 @@
       class="meta p-4 absolute inset-0 transition-all opacity-0 hover:opacity-100 bg-black bg-opacity-80 text-white"
     >
       <span class="tag block uppercase text-sm mb-1">{{ video.tags }}</span>
-      <span class="title text-xl md:text-2xl font-bold">{{ video.title }}</span>
+      <span class="title text-lg md:text-xl font-bold">{{ video.title }}</span>
     </div>
   </nuxt-link>
 </template>
