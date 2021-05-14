@@ -3,12 +3,13 @@
     <div class="article-wrapper">
       <div class="article-main">
         <div
-          class="article-body pt-20 px-8 container mx-auto bg-white relative z-10 pb-10 case-study-body"
+          class="article-body pt-8 px-8 container mx-auto bg-white relative z-10 pb-2 case-study-body"
         >
-          <div class="rounded-lg overflow-hidden">
+          <div class="shadow-md rounded-lg overflow-hidden">
             <vue-plyr>
               <div
                 data-plyr-provider="youtube"
+                data-plyr-allow="autoplay"
                 v-bind:data-plyr-embed-id="video.youtube"
               ></div>
             </vue-plyr>
@@ -17,15 +18,53 @@
         </div>
       </div>
       <div :class="video.slug" class="intro">
-        <div class="py-12 article-header border-b border-grey-900">
+        <div class="py-10 article-header border-b border-grey-900">
           <div class="mx-auto container px-8">
             <h1 class="text-4xl mb-3">{{ video.title }}</h1>
-            <p class="meta text-gray-600 text-sm">
+            <p class="meta text-gray-600 text-sm mb-8">
               <span class="tags mr-4 pr-4 uppercase">{{ video.tags }}</span>
               <span class="date"
                 >Posted {{ $moment(video.updatedAt).fromNow() }}</span
               >
             </p>
+            <div
+              class="feedback bg-gray-100 p-3 border-gray-200 rounded-md border"
+            >
+              <h3 class="mb-2">Share a private thought</h3>
+              <p class="mb-4 text-md">
+                Do you have a question about something on this page? Notice
+                something that seems out of place? Just want to say hi? Add a
+                few words below and I'll take a look.
+              </p>
+              <textarea
+                class="w-full border border-gray-200 rounded-md px-3 py-2"
+                placeholder="What would you like to share?"
+              />
+              <div class="md:flex gap-2 mb-3">
+                <input
+                  class="px-3 py-1 my-1 w-full md:flex-1 border-gray-200 rounded-md border"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  class="px-3 w-full my-1 md:flex-1 border-gray-200 rounded-md border"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                  class="px-3 w-full my-1 md:flex-1 border-gray-200 rounded-md border"
+                  border-gray-200
+                  rounded-md
+                  border
+                  type="text"
+                  placeholder="(Optional) Twitter username"
+                />
+              </div>
+              <a
+                class="bg-gray-800 rounded-md text-white px-3 py-2 inline-block submit"
+                >Send feedback</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -36,7 +75,7 @@
       </div>
     </div> -->
     <div class="bg-white relative z-10 border-t border-gray-200 p-8 py-12">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-6">
         <h3 class="mb-2">Watch this next</h3>
         <VideoRow :videos="videos" />
       </div>
@@ -67,6 +106,10 @@ export default {
 </script>
 
 <style>
+.article-wrapper .plyr__poster {
+  top: -2px;
+}
+
 .case-study-body h2 {
   @apply my-8;
   @apply max-w-2xl;
