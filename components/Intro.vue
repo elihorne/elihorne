@@ -14,8 +14,7 @@
       </h1>
       <div class="md:ml-12 md:mt-10 mr-6">
         <p class="text-xl md:text-2xl mb-4 md:mb-8 font-bold">
-          VP, Product and Design at
-          <a class="kickstarter" href="https://kickstarter.com">Kickstarter</a>.
+          Currently on vacation, and starting something new soon.
         </p>
         <p class="text-md md:text-lg text-gray-700 max-w-lg leading-relaxed">
           I'm a product leader focused on design and strategy, creating

@@ -2,8 +2,8 @@
   <div class="border-t-2 mt-20 border-gray-200 py-20 px-6">
     <h4 class="text-lg font-bold mb-12">Experience</h4>
     <p class="text-2xl md:text-3xl max-w-4xl mb-12">
-      I have more than 13 years of experience in the product design space, and
-      have been managing teams since 2017.
+      I have more than {{ years }} 13 years of experience in the product design
+      space, and have been managing teams since 2017.
     </p>
     <div class="my-6 grid grid-cols-1 gap-10 md:grid-cols-2">
       <div>
@@ -12,7 +12,7 @@
             >Kickstarter</a
           ></span
         >
-        <p class="title-date">VP, Product and Design, 2017-Present</p>
+        <p class="title-date">VP, Product and Design, 2017-2021</p>
         <p class="text-md max-w-lg">
           Hired and managed a team of product designers, product managers, and a
           UX writer, creating a supportive environment for them to grow and do
