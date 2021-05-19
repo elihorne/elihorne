@@ -27,7 +27,7 @@
                 >Posted {{ $moment(video.updatedAt).fromNow() }}</span
               >
             </p>
-            <div
+            <!-- <div
               class="feedback bg-gray-100 p-3 border-gray-200 rounded-md border"
             >
               <h3 class="mb-2">Share a private thought</h3>
@@ -64,7 +64,7 @@
                 class="bg-gray-800 rounded-md text-white px-3 py-2 inline-block submit"
                 >Send feedback</a
               >
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
