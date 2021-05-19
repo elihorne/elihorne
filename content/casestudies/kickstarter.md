@@ -17,11 +17,7 @@ logo: /logos/kickstarter.svg
 > opportunity to build a team from scratch while working on a beloved
 > brand.
 
-<img
-data-aos="fade-up"
-data-aos-duration="1000"
-data-aos-easing="ease-in-out"
-src="/work/kickstarter/ksr-charter.png"
+<img src="/work/kickstarter/ksr-charter.png"
 />
 <span class="caption">
 Kickstarter's mission is to help bring creative projects to life.
@@ -38,11 +34,7 @@ multiple rounds because the interviewers couldn't agree if that
 person was the right fit for the role. Interviews seemed to get
 stuck perpetually at the "on-site" stage.
 
-<div
-data-aos="fade-up"
-data-aos-duration="1000"
-data-aos-easing="ease-in-out"
-class="hiring-wizard steps-3 mt-12 my-8 mx-auto max-w-4xl"
+<div class="hiring-wizard steps-3 mt-12 my-8 mx-auto max-w-4xl"
 >
 <ol>
 	<li>
@@ -90,11 +82,7 @@ amount of time. Here are some of the changes I introduced:
 	"problem solving", "core skills", and "strategic thinking."
 </li>
 </ul>
-<div
-data-aos="fade-up"
-data-aos-duration="1000"
-data-aos-easing="ease-in-out"
-class="hiring-wizard steps-4 mt-12 my-8 mx-auto max-w-4xl"
+<div class="hiring-wizard steps-4 mt-12 my-8 mx-auto max-w-4xl"
 >
 <ol>
 	<li>
@@ -140,11 +128,7 @@ the hiring process to calibrate level, as well as during the
 bi-annual review process for existing team members to set goals and
 understand their progress towards their next career milestone.
 
-<div
-data-aos="fade-up"
-data-aos-duration="1000"
-data-aos-easing="ease-in-out"
-class="skills-matrix border border-gray-400 shadow-sm bg-white overflow-hidden rounded-md grid grid-cols-4 max-w-4xl mx-auto my-10"
+<div class="skills-matrix border border-gray-400 shadow-sm bg-white overflow-hidden rounded-md grid grid-cols-4 max-w-4xl mx-auto my-10"
 >
 	<span class="col-header">&nbsp;</span>
 	<span class="col-header">Designer</span>
@@ -180,11 +164,7 @@ minimum, we expected to see work at an early, unrefined stage, which
 we called "Studio", and again before it went into development, which
 we called "Review".
 
-<div
-data-aos="fade-up"
-data-aos-duration="1000"
-data-aos-easing="ease-in-out"
-class="design-critique max-w-4xl mx-auto text-sm"
+<div class="design-critique max-w-4xl mx-auto text-sm"
 >
 	<div class="grid grid-cols-3">
 		<div class="stage">Early</div>
@@ -250,11 +230,7 @@ patterns, proposed changes to the system, and upcoming trends worth
 considering. They evaluated patterns for consistency with the larger
 system as well as accessibility and internationalization concerns.
 
-<img
-data-aos="fade-up"
-data-aos-duration="1000"
-data-aos-easing="ease-in-out"
-src="/work/kickstarter/kds.png"
+<img src="/work/kickstarter/kds.png"
 />
 <span class="caption">
 Our Figma shared library collection, across our platforms.
@@ -332,11 +308,7 @@ licenses (Sketch, Abstract, and InVision.)
 	</p>
 </div>
 <div class="col-span-2">
-	<ul
-	data-aos="fade-up"
-	data-aos-duration="1000"
-	data-aos-easing="ease-in-out"
-	class="research-steps bg-grey-900"
+	<ul	class="research-steps bg-grey-900"
 	>
 	<li><span class="check">✔️</span> Passive opt-in</li>
 	<li><span class="check">✔️</span> Screener questions</li>

@@ -28,7 +28,7 @@ header a:hover {
 
 nav a {
   @apply py-4 uppercase px-2 inline-block;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid transparent;
 }
 
 .nuxt-link-exact-active {
