@@ -23,10 +23,16 @@
           </p>
           <h3>Career</h3>
           <p>
-            As VP of Product and Design at Kickstarter, I was focused on helping
-            bring creative projects to life. Before that, I worked at Google as
-            a Design Lead on G Suite's productivity tools - Google Docs, Sheets,
-            and Forms.
+            I am currently a design manager at Stripe, responsible for
+            <a href="http://stripe.com/checkout">Checkout</a>,
+            <a href="https://stripe.com/payments/elements">Elements</a>,
+            <a href="https://stripe.com/tax">Tax</a> and global payment methods.
+          </p>
+          <p>
+            Previously, as VP of Product and Design at <a href="https://kickstarter.com">Kickstarter>/a>, I was
+            focused on helping bring creative projects to life. I also worked at
+            Google as a Design Lead on G Suite's productivity tools - Google
+            Docs, Sheets, and Forms.
           </p>
           <p>
             &rarr; <NuxtLink to="/work" class="mr-2">Case studies</NuxtLink>
