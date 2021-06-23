@@ -3,7 +3,7 @@
     <div class="container py-20 px-6 mx-auto">
       <h1 class="text-5xl md:text-6xl mb-4 leading-tight">Hi, I'm Eli.</h1>
       <p class="text-2xl mb-4 font-bold">
-        I currently work at
+        Currently: managing product design at
         <a class="stripe" href="https://stripe.com">Stripe</a>.
       </p>
       <p class="text-lg text-gray-700 max-w-lg leading-relaxed">

@@ -31,7 +31,7 @@ nav a {
   border-bottom: 3px solid transparent;
 }
 
-.nuxt-link-exact-active {
+nav .nuxt-link-exact-active {
   font-weight: bold;
   @apply text-black;
   border-bottom: 3px solid #3cf;

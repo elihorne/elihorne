@@ -13,8 +13,7 @@
         <p class="title-date">Design Manager, 2021+</p>
         <p class="text-md max-w-lg">
           Supporting a team of designers responsible for Checkout, Elements, Tax
-          and global payment methods. Also responsible for all design projects
-          in Europe, Middle East, Asia and the Pacific region.
+          and design initatives in Europe and the Asia/Pacific region.
         </p>
       </div>
       <div>
