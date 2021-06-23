@@ -28,11 +28,12 @@ h4 {
 }
 
 .button {
-  @apply border border-gray-400 bg-white bg-opacity-50 text-sm p-2 px-6 text-sm text-black font-bold rounded-full inline-block;
+  @apply border shadow-none border-gray-300 bg-white bg-opacity-50 text-sm p-3 px-6 text-sm text-black font-bold rounded-full inline-block;
+  animation: transform all 0.5s ease-in-out;
 }
 
 .button:hover {
-  @apply border-gray-500 bg-opacity-75;
+  @apply shadow-md border-gray-400;
 }
 
 [data-aos='fade-up'] {

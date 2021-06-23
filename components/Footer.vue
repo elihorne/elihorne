@@ -86,6 +86,10 @@ a.kickstarter {
   border-bottom: 3px solid #05ce78;
 }
 
+a.stripe {
+  border-bottom: 3px solid #635bff;
+}
+
 a.foodnetwork {
   border-bottom: 3px solid #ca2125;
 }

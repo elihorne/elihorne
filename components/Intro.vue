@@ -1,25 +1,17 @@
 <template>
-  <div class="sm:container intro mb-0 md:flex mx-5 md:m-0">
-    <div class="flex-1 bg-gradient-to-r from-indigo-500 to-indigo-300">
-      <img
-        class="w-full object-bottom"
-        src="/avatar/elihorne-tincan-transparent-square.png "
-      />
-    </div>
-    <div class="flex-1">
-      <h1
-        class="text-6xl text-shadow-white lg:-ml-24 lg:text-8xl md:-ml-10 my-10 leading-tight"
-      >
-        Hi, I'm Eli.
-      </h1>
-      <div class="md:ml-12 md:mt-10 mr-6">
-        <p class="text-xl md:text-2xl mb-4 md:mb-8 font-bold">
-          Currently on vacation, and starting something new soon.
-        </p>
-        <p class="text-md md:text-lg text-gray-700 max-w-lg leading-relaxed">
-          I'm a product leader focused on design and strategy, creating
-          beautiful, usable experiences that provide meaningful value.
-        </p>
+  <div class="intro py-24 mb-10 border-b border-gray-200">
+    <div class="container px-6 mx-auto">
+      <h1 class="text-5xl md:text-6xl mb-4 leading-tight">Hi, I'm Eli.</h1>
+      <p class="text-2xl mb-4 font-bold">
+        I currently work at
+        <a class="stripe" href="https://stripe.com">Stripe</a>.
+      </p>
+      <p class="text-lg text-gray-700 max-w-lg leading-relaxed">
+        I'm a product leader focused on design and strategy, creating beautiful,
+        usable experiences that provide meaningful value.
+      </p>
+      <div class="my-6">
+        <nuxt-link to="/about" class="button">Learn more about me</nuxt-link>
       </div>
     </div>
   </div>
@@ -35,9 +27,5 @@
 
 .intro h1 {
   font-weight: 800;
-}
-
-.intro a:hover {
-  border-bottom: 3px solid #222;
 }
 </style>

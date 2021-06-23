@@ -8,6 +8,17 @@
     <div class="my-6 grid grid-cols-1 gap-10 md:grid-cols-2">
       <div>
         <span class="font-bold text-xl block"
+          ><a href="https://www.stripe.com" class="stripe">Stripe</a></span
+        >
+        <p class="title-date">Design Manager, 2021+</p>
+        <p class="text-md max-w-lg">
+          Supporting a team of designers responsible for Checkout, Elements, Tax
+          and global payment methods. Also responsible for all design projects
+          in Europe, Middle East, Asia and the Pacific region.
+        </p>
+      </div>
+      <div>
+        <span class="font-bold text-xl block"
           ><a href="https://www.kickstarter.com" class="kickstarter"
             >Kickstarter</a
           ></span

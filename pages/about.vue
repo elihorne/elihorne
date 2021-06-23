@@ -29,10 +29,11 @@
             <a href="https://stripe.com/tax">Tax</a> and global payment methods.
           </p>
           <p>
-            Previously, as VP of Product and Design at <a href="https://kickstarter.com">Kickstarter>/a>, I was
-            focused on helping bring creative projects to life. I also worked at
-            Google as a Design Lead on G Suite's productivity tools - Google
-            Docs, Sheets, and Forms.
+            Previously, as VP of Product and Design at
+            <a href="https://kickstarter.com">Kickstarter</a>, I was focused on
+            helping bring creative projects to life. I also worked at Google as
+            a Design Lead on G Suite's productivity tools - Google Docs, Sheets,
+            and Forms.
           </p>
           <p>
             &rarr; <NuxtLink to="/work" class="mr-2">Case studies</NuxtLink>
