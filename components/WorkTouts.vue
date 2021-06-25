@@ -13,15 +13,17 @@
                 class="flex flex-col md:flex-row flex-grow lg:flex-col items-center justify-between"
               >
                 <div class="p-8 md:p-8 lg:p-10">
-                  <span class="logo block mb-2">
+                  <span class="logo block">
                     <img :src="casestudy.logo" />
                   </span>
-                  <span class="date text-gray-600 inline-block text-sm"
+                  <!-- <span class="date text-gray-600 inline-block text-sm"
                     >{{ casestudy.role }}, {{ casestudy.start }}-{{
                       casestudy.end
                     }}</span
+                  > -->
+                  <p
+                    class="my-4 mb-6 md:max-w-md lg:max-w-xl text-md lg:text-lg"
                   >
-                  <p class="my-6 md:max-w-md lg:max-w-xl text-md lg:text-lg">
                     {{ casestudy.blurb }}
                   </p>
                   <NuxtLink
@@ -64,7 +66,7 @@ export default {
 
 .work-container .logo img {
   width: 100%;
-  max-width: 260px;
+  max-width: 220px;
   height: 40px;
   text-align: left;
 }

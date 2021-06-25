@@ -99,6 +99,7 @@ export default {
     const video = await $content('videos', params.slug).fetch()
     const videos = await $content('videos')
       .where({ slug: { $ne: params.slug } })
+      .limit(3)
       .fetch()
     return { video, videos }
   },

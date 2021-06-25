@@ -28,7 +28,7 @@ h4 {
 }
 
 .button {
-  @apply border shadow-none border-gray-300 bg-white bg-opacity-50 text-sm p-3 px-6 text-sm text-black font-bold rounded-full inline-block;
+  @apply border shadow-none border-gray-300 bg-white bg-opacity-50 text-sm p-3 px-6 text-sm text-black font-bold rounded-lg inline-block;
   animation: transform all 0.5s ease-in-out;
 }
 

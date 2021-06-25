@@ -1,5 +1,5 @@
 <template>
-  <header class="text-sm z-20 relative shadow-sm">
+  <header class="text-sm z-20 relative border-b border-gray-200">
     <div class="container flex mx-auto px-6 md:px-8">
       <NuxtLink to="/" class="flex-none nav-item item-brand uppercase font-bold"
         >Eli Horne</NuxtLink

@@ -1,9 +1,13 @@
 <template>
   <div class="work">
-    <div class="">
-      <div class="container py-8 mx-auto">
+    <div class="border-gray-200 border-b">
+      <div class="container py-20 mx-auto">
         <WorkTouts :casestudies="casestudies" />
-        <Experience />
+      </div>
+    </div>
+    <div class="">
+      <div class="container py-20 mx-auto">
+        <Experience :experience="experience" />
       </div>
     </div>
   </div>
@@ -15,7 +19,11 @@ export default {
     const casestudies = await $content('casestudies')
       .sortBy('start', 'desc')
       .fetch()
-    return { casestudies }
+    const experience = await $content('experience')
+      .sortBy('start', 'desc')
+      .limit(4)
+      .fetch()
+    return { casestudies, experience }
   },
 }
 </script>

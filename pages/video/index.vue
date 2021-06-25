@@ -1,6 +1,8 @@
 <template>
-  <div class="work mt-12">
-    <VideoSection :videos="videos" />
+  <div>
+    <div class="work mt-12 py-10">
+      <VideoSection :videos="videos" />
+    </div>
     <Newsletter />
   </div>
 </template>

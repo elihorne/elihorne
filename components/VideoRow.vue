@@ -1,10 +1,10 @@
 <template>
-  <div class="overflow-x-scroll flex">
-    <div class="flex flex-nowrap px-1 py-4">
+  <div class="">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3 px-1 py-4">
       <div
         v-for="video in videos"
         :key="video.index"
-        class="rounded-md overflow-hidden bg-white mr-4 w-72 lg:w-96 shadow-md"
+        class="rounded-md overflow-hidden bg-white h-autoshadow-md"
       >
         <VideoThumbnail :video="video" />
       </div>
